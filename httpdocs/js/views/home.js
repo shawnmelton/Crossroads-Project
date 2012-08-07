@@ -2,17 +2,15 @@ define([
 		"jquery",
 		"underscore",
 		"backbone",
-		'text!views/home.html'
+		'text!templates/home.html'
 	], function($, _, Backbone, homeHTML){
 		var homeView = Backbone.View.extend({
-			header: $("header"),
+			header: $("body > div"),
 			render: function(){
-				console.log("Got here");
-			
 				// Using Underscore we can compile our template with data
 				var data = {};
-				var compiledTemplate = _.template(homeHTML, data);
-				this.header.append(compiledTemplate);
+				var html = _.template(homeHTML, data);
+				this.header.html(html);
 			}
 		});
 		
