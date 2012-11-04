@@ -10,7 +10,7 @@ define([
 				// Using Underscore we can compile our template with data
 				var data = {};
 				var html = _.template(homeHTML, data);
-				this.header.html(html);
+				//this.header.html(html);
 			}
 		});
 		

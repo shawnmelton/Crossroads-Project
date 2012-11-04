@@ -1,7 +1,7 @@
-var app = require('express').createServer();
+var app = require("express").createServer();
+app.set("title", "Crossroads API");
 
-app.get('/', function(req, res){
-	res.send('testing 1 2 3');
-});
+// Add routes.
+require("./controllers/users.js");
 
 app.listen(8080);
