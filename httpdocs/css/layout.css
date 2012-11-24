@@ -7,8 +7,9 @@ html {}
 		margin: 0;
 	}
 		header {
-			border-top: 3px solid #48413e;
+			border-top: 2px solid #e89c17;
 			height: 50px;
+			background: #ddd;
 			background: -webkit-linear-gradient(#fff, #ddd);
 			background: -moz-linear-gradient(#fff, #ddd);
 			background: -o-linear-gradient(#fff, #ddd);
@@ -22,23 +23,29 @@ html {}
 					text-decoration: none;
 					color: #48413e;
 					font-size: 125%;
-					padding: 0 2%;
-					margin: 7px 0;
-					line-height: 36px;
-					height: 36px;
-					border-left: 1px solid #ccc;
 					width: 13%;
+					height: 50px;
 					text-align: center;
 					text-shadow: 1px 1px 1px #aaa;
 				}
-					header > nav > a:hover { background: #fff; }
-				header > nav > a.first { 
-					border-left-width: 0;
-					margin-left: 24%;
-				}
-					header > nav > a.first:hover { color: #7ab6ca; } /* Blue */
-					header > nav > a.second:hover { color: #92b636; } /* Green */
-					header > nav > a.third:hover { color: #e89c17; } /* Orange */
+					header > nav > a:hover {
+						background: #eee;
+						background: -webkit-linear-gradient(#fef0d7, #ddd);
+						background: -moz-linear-gradient(#f9ad28, #ddd);
+						background: -o-linear-gradient(#f9ad28, #ddd);
+						background: -ms-linear-gradient(#f9ad28, #ddd);
+						background: linear-gradient(#fef0d7, #ddd);
+					}
+				header > nav > a.first { margin-left: 30%; }
+					header > nav > a > span {
+						display: block;
+						margin: 7px 0;
+						line-height: 36px;
+						height: 36px;
+						border-left: 1px solid #ccc;
+						padding: 0 2%;
+					}
+					header > nav > a.first > span { border-left-width: 0; }
 	
 		body > div { 
 			background: #fff;
@@ -48,42 +55,54 @@ html {}
 			#logo {
 				display: block;
 				margin: 25px auto;
-				max-width: 309px;
-				max-height: 250px;
-				width: 30%;
-				height: 25%;
+				max-width: 400px;
+				width: 50%;
+				height: 45%;
 			}
 			#subheading {
 				margin: 2% auto 5%;
 				padding: 0 15px;
 				font-weight: normal;
 				font-size: 125%;
-				text-align: center;
-				line-height: 28px;
-				max-width: 770px;
+				text-align: justify;
+				line-height: 26px;
+				width: 75%;
 			}
 			.subcontent {
-				width: 80%;
+				width: 75%;
 				margin: 0 auto;
 			}
 				.subcontent > div {
-					width: 25%;
+					width: 27%;
 					float: left;
 					margin-right: 9%;
 					padding-left: 2px;
+					text-align: justify;
 				}
 				.subcontent > div.orange { margin-right: 0; }
 					.subcontent > div > .bar {
+						position: relative;
 						height: 12px;
 						background: #48413e;
 						border-left: 15px solid #ccc;
+						overflow: hidden;
 					}
+						.bar > .animation {
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 0;
+							height: 12px;
+						}
+						.subcontent > div a { font-size: 120%; }
 						.subcontent > div.blue > .bar { border-left-color: #7ab6ca; }
+						.subcontent > div.blue a { color: #7ab6ca; }
 						.subcontent > div.green > .bar { border-left-color: #92b636; }
+						.subcontent > div.green a { color: #92b636; }
 						.subcontent > div.orange > .bar { border-left-color: #e89c17; }
 					.subcontent > div > h3 {
 						margin: 5px 0 15px 5px;
-						font-size: 125%;
+						font-size: 140%;
 						text-transform: uppercase;
 						font-weight: normal;
 					}
@@ -92,27 +111,88 @@ html {}
 						line-height: 20px;
 						font-size: 115%;
 					}
-			
+		
 			.clear {
 				clear: both;
 				height: 0;
 				overflow: hidden;
 			}
 			
-			
 			body > div a { 
 				color: #d69015;
 				text-decoration: none;
 			}
 				body > div a:hover { text-decoration: underline; }
-			body > div a.campus { color: #7ab6ca; }
-			body > div a.world { color: #92b636; }
-		footer { 
-			height: 100px;
-			padding: 15px 25px;
+			
+		footer {
+			padding: 25px;
+			color: #ccc;
 		}
+			footer > img { margin-bottom: 10px; }
 			footer a {
 				color: #ccc;
 				text-decoration: none;
 			}
 				footer a:hover { text-decoration: underline; }
+			footer > p {
+				margin-bottom: 0px;
+				font-size: 90%;
+			}
+			#copyright {
+				color: #888;
+				font-size: 80%;	
+				margin-top: 50px;
+			}
+			footer ol {
+				clear: right;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				color: #ccc;
+			}
+			#follow {
+				float: right;
+				margin-bottom: 15px;
+				width: 465px;
+			}
+				#follow > h3 {
+					text-transform: uppercase;
+					font-weight: normal;
+					margin: 0 25px 10px 0;
+					color: #eee;
+					height: 24px;
+					line-height: 24px;
+					float: left;
+				}
+				#follow > a {
+					display: block;
+					height: 24px;
+					width: 24px;
+					background: #666;
+					float: left;
+					margin-right: 15px;
+					background-position: 0 0;
+					background-repeat: no-repeat;
+				}
+				#follow > a#facebook { background-image: url(../img/facebook.png); }
+				#follow > a#twitter { background-image: url(../img/twitter.png); }
+				#follow > a#vimeo { background-image: url(../img/vimeo.png); }
+				#follow > a#ccb { background-image: url(../img/ccb.png); }
+					#follow > a:hover { background-position: 0 -24px; }
+					#follow > a > span { display: none; }
+			footer > ol { float: right; }
+				footer > ol > li {
+					float: left;
+					margin-right: 55px;
+					min-width: 100px;
+				}
+					footer > ol > li > a {
+						color: #eee;
+						font-size: 135%;
+						display: block;
+					}
+						footer > ol ol {
+							margin-top: 7px;
+							line-height: 18px;
+						}
+							footer > ol > li li > a { float: none; }

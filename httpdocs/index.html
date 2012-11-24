@@ -6,57 +6,57 @@
 		<meta http-equiv="Content-Encoding" content="gzip">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="/css/responsive.css">
 		<script type="text/javascript" data-main="js/bootstrap" src="/js/libs/require.js"></script>
-		<!--[if lt IE 9]><script src="/js/libs/html5.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+			<script src="/js/libs/css3-mediaqueries.js"></script>
+			<script src="/js/libs/html5.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<header>
 			<nav>
-				<a href="/learn" class="first">Learn</a>
-				<a href="/connect" class="second">Connect</a>
-				<a href="/find" class="third">Find</a>
+				<a href="/learn" class="first"><span>Learn</span></a>
+				<a href="/connect" class="second"><span>Connect</span></a>
+				<a href="/find" class="third"><span>Find</span></a>
 			</nav>
 		</header>
-		<div>
-			<img src="/img/logo.png" alt="Crossroads Church Norfolk" id="logo">
-			<h2 id="subheading">
-				A small but vibrant church in Norfolk Virginia, Crossroads is dedicated to furthering the Gospel of 
-				Jesus Christ through a commitment to the <a href="/learn/mission">campus, community and world</a>. 
-				Comprised mostly of young families and students, Crossroads culminates a casual and welcoming atmosphere. 
-				We are here for everyone, especially you.
-			</h2>
-			<div class="subcontent">
-				<div class="blue">
-					<div class="bar"></div>
-					<h3>Learn</h3>
-					<p>
-						Sed ut tempus nisl. Duis a nisl nibh. Cras orci tortor, condimentum ac tempus vitae, volutpat 
-						eget libero. Pellentesque consectetur nibh sed ligula gravida vitae rutrum mauris viverra.
-					</p>
-				</div>
-				<div class="green">
-					<div class="bar"></div>
-					<h3>Connect</h3>
-					<p>
-						Sed ut tempus nisl. Duis a nisl nibh. Cras orci tortor, condimentum ac tempus vitae, volutpat 
-						eget libero. Pellentesque consectetur nibh sed ligula gravida vitae rutrum mauris viverra.
-					</p>
-				</div>
-				<div class="orange">
-					<div class="bar"></div>
-					<h3>Find</h3>
-					<p>
-						Sed ut tempus nisl. Duis a nisl nibh. Cras orci tortor, condimentum ac tempus vitae, volutpat 
-						eget libero. Pellentesque consectetur nibh sed ligula gravida vitae rutrum mauris viverra.
-					</p>
-				</div>
-				<br class="clear">
-				<br><br>
-			</div>
-		</div>
+		<div></div>
 		<footer>
+			<div id="follow">
+				<h3>Follow Us</h3>
+				<a href="https://www.facebook.com/pages/CrossRoads-Church/149148598445850" id="facebook" target="_blank"><span>Facebook</span></a>
+				<a href="https://twitter.com/revkev001" id="twitter" target="_blank"><span>Twitter</span></a>
+				<a href="http://vimeo.com/channels/114821" id="vimeo" target="_blank"><span>Vimeo</span></a>
+				<a href="https://crcnorfolk.ccbchurch.com/login.php" id="ccb" target="_blank"><span>CCB</span></a>
+			</div>
+			<ol>
+				<li>
+					<a href="/learn">Learn</a>
+					<ol>
+						<li><a href="/learn/beliefs">Beliefs</a></li>
+						<li><a href="/learn/identity">Identity</a></li>
+						<li><a href="/learn/mission">Mission</a></li>
+					</ol>
+				</li>
+				<li>
+					<a href="/connect">Connect</a>
+					<ol>
+						<li><a href="https://crcnorfolk.ccbchurch.com/w_calendar.php" target="_blank">Calendar</a></li>
+						<li><a href="/connect/life-groups">Life Groups</a></li>
+						<li><a href="/connect/worship">Worship</a></li>
+					</ol>
+				</li>
+				<li>
+					<a href="/find">Find</a>
+					<ol>
+						<li><a href="/contact">Contact</a></li>
+					</ol>
+				</li>
+			</ol>
 			<img src="/img/textLogoDark.png" alt="Crossroads Church">
-			<p><a href="/find">1127 Surrey Crescent Norfolk, VA 23508</a></p>
+			<p id="copyright">&copy;2012 Crossroads Church Norfolk.  All rights reserved.</p>
+			<div class="clear"></div>
 		</footer>
 	</body>
 </html>

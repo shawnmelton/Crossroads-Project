@@ -1,0 +1,10 @@
+/* Phone */
+@media screen and (max-width:481px) {
+	body {
+		font-size: 11px;
+	}
+	
+	#subheading {
+		line-height: 20px;
+	}
+}

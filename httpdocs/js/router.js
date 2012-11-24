@@ -15,7 +15,6 @@ define([
 			},
 			
 			showHome: function(){
-				console.log(homeView);
 				homeView.render();
 			},
 			
