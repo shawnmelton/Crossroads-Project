@@ -10,7 +10,7 @@ define([
 				// Using Underscore we can compile our template with data
 				var data = {};
 				var html = _.template(homeHTML, data);
-				this.content.addClass("home").html(html);
+				this.content.html(html);
 				
 				// Apply styles for home page.
 				$("body").attr("class", "home");

@@ -2,13 +2,15 @@ define([
 		'jquery',
 		'underscore',
 		'backbone',
-		'views/home'
-	], function($, _, Backbone, homeView){
+		'views/home',
+		'views/learn'
+	], function($, _, Backbone, homeView, learnView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
 				'': 'showHome',
 				'/': 'showHome',
+				'learn': 'showLearn',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -18,6 +20,10 @@ define([
 				homeView.render();
 			},
 			
+			showLearn: function() {
+				learnView.render();
+			},
+			
 			defaultAction: function(actions){
 				console.log('No route:', actions);
 			}
@@ -25,7 +31,9 @@ define([
 		
 		var initialize = function(){
 			var app_router = new AppRouter;
-			Backbone.history.start();
+			Backbone.history.start({
+				pushState: true
+			});
 		};
 		
 		return {

@@ -6,7 +6,9 @@ html {}
 		color: #48413e;
 		margin: 0;
 	}
-		header {
+	
+	/* Home Page styling */
+		body.home > header {
 			border-top: 2px solid #e89c17;
 			height: 50px;
 			background: #ddd;
@@ -17,7 +19,7 @@ html {}
 			background: linear-gradient(#fff, #ddd);
 			overflow: hidden;
 		}
-				header > nav > a {
+				body.home > header > nav > a {
 					display: block;
 					float: left;
 					text-decoration: none;
@@ -28,7 +30,7 @@ html {}
 					text-align: center;
 					text-shadow: 1px 1px 1px #aaa;
 				}
-					header > nav > a:hover {
+					body.home > header > nav > a:hover {
 						background: #eee;
 						background: -webkit-linear-gradient(#fef0d7, #ddd);
 						background: -moz-linear-gradient(#f9ad28, #ddd);
@@ -36,8 +38,8 @@ html {}
 						background: -ms-linear-gradient(#f9ad28, #ddd);
 						background: linear-gradient(#fef0d7, #ddd);
 					}
-				header > nav > a.first { margin-left: 30%; }
-					header > nav > a > span {
+				body.home > header > nav > a.first { margin-left: 30%; }
+					body.home > header > nav > a > span {
 						display: block;
 						margin: 7px 0;
 						line-height: 36px;
@@ -45,14 +47,15 @@ html {}
 						border-left: 1px solid #ccc;
 						padding: 0 2%;
 					}
-					header > nav > a.first > span { border-left-width: 0; }
+					body.home > header > nav > a.first > span { border-left-width: 0; }
 	
 		body > div { 
 			background: #fff;
 			min-height: 500px;
 			overflow: hidden;
 		}
-			#logo {
+			body.home #logo { display: none; }
+			#home-logo {
 				display: block;
 				margin: 25px auto;
 				max-width: 400px;
@@ -123,6 +126,11 @@ html {}
 				text-decoration: none;
 			}
 				body > div a:hover { text-decoration: underline; }
+				
+		/* Secondary Styles */
+		body.secondary > header {
+			background: #fff;
+		}
 			
 		footer {
 			padding: 25px;
