@@ -19,6 +19,7 @@ html {}
 			background: linear-gradient(#fff, #ddd);
 			overflow: hidden;
 		}
+			body.home #banner { display: none; }
 				body.home > header > nav > a {
 					display: block;
 					float: left;
@@ -121,16 +122,91 @@ html {}
 				overflow: hidden;
 			}
 			
-			body > div a { 
+			body > div a {
 				color: #d69015;
 				text-decoration: none;
 			}
 				body > div a:hover { text-decoration: underline; }
 				
+			body.secondary h2 {
+				margin: 5px 0;
+				font-weight: normal;
+				font-size: 150%;
+				text-transform: uppercase;
+			}
+			body.secondary h3 {
+				font-weight: normal;
+				font-size: 115%;
+				margin: 5px 0;
+			}
+			
+			body > div > section {
+				margin: 1%;
+				padding: 3% 5%;
+			}
+				body > div > section.alternate { background: #e4dfdd; }
+				
 		/* Secondary Styles */
 		body.secondary > header {
+			position: relative;
 			background: #fff;
+			height: 160px;
 		}
+		body.learn > header { border-top: 2px solid #7ab6ca; }
+		body.connect > header { border-top: 2px solid #92b636; }
+		body.find > header { border-top: 2px solid #e89c17; }
+			body.secondary #banner {
+				height: 100px;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			body.secondary > header > nav {
+				position: absolute;
+				right: 0;
+				top: 100px;
+				width: 360px;
+			}
+				body.secondary > header > nav > a {
+					display: block;
+					border-top: 12px solid #48413e;
+					float: left;
+					font-size: 115%;
+					text-decoration: none;
+					color: #48413e;
+					width: 120px;
+					height: 50px;
+					line-height: 45px;
+					text-align: center;
+				}
+					body.secondary > header > nav > a.active,
+					body.secondary > header > nav > a:hover { 
+						border-top-color: #7ab6ca;
+						background: #fcfcfc;
+					}
+					body.secondary > header > nav > a.second.active,
+					body.secondary > header > nav > a.second:hover { border-top-color: #92b636; }
+					body.secondary > header > nav > a.third.active,
+					body.secondary > header > nav > a.third:hover { border-top-color: #e89c17; }
+			#logo {
+				position: absolute;
+				top: -8px;
+				left: 3%;
+			}
+				#logo > img { max-width: 208px; }		
+			
+			body.secondary > div img {
+				border: 5px solid #48413e;
+			}
+			body.secondary > div p { line-height: 20px; }
+			body.secondary > div p.before-small { margin-bottom: 2px; }
+			body.secondary > div p.small { 
+				font-size: 85%;
+				color: #665;
+				margin: 0 0 25px;
+			}
+	
 			
 		footer {
 			padding: 25px;

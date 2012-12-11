@@ -14,6 +14,7 @@ define([
 				
 				// Apply styles for home page.
 				$("body").attr("class", "home");
+				$("#logo > img").attr("src", "/img/logo.png");
 				
 				$("div.subcontent > div").hover(function(){
 					if($(this).find(".animation").length) { // if an animation is already happening, cancel.

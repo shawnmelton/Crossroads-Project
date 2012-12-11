@@ -3,14 +3,18 @@ define([
 		'underscore',
 		'backbone',
 		'views/home',
-		'views/learn'
-	], function($, _, Backbone, homeView, learnView){
+		'views/learn',
+		'views/connect',
+		'views/find'
+	], function($, _, Backbone, homeView, learnView, connectView, findView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
 				'': 'showHome',
 				'/': 'showHome',
 				'learn': 'showLearn',
+				'connect': 'showConnect',
+				'find': 'showFind',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -22,6 +26,14 @@ define([
 			
 			showLearn: function() {
 				learnView.render();
+			},
+			
+			showConnect: function() {
+				connectView.render();
+			},
+			
+			showFind: function() {
+				findView.render();
 			},
 			
 			defaultAction: function(actions){
