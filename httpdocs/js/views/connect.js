@@ -14,7 +14,7 @@ define([
 				
 				// Apply styles for home page.
 				$("body").attr("class", "secondary connect");
-				$("#logo > img").attr("src", "/img/logo-green.png");
+				$("#logo > img").attr("src", "/img/logo-green-small.png");
 				
 				// Activate link.
 				$("header > nav > a").removeClass("active");

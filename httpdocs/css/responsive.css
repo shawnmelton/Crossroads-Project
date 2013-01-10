@@ -1,10 +1,57 @@
+/* Tablet */
+@media screen and (max-width:800px) {
+	body { font-size: 12px; }
+	
+	body > header > nav > a { width: 18% !important; }
+	body.home > header > nav > a.first { margin-left: 24%; }
+
+	#subheading { width: 85%; }
+	.subcontent { width: 90%; }
+}
+
+/* Smaller Tablet */
+@media screen and (max-width:700px) {
+	body > header > nav > a { width: 21% !important; }
+	body.home > header > nav > a.first { margin-left: 20%; }
+
+	.subcontent > div {
+		text-align: left;
+		margin-right: 8%;
+	}
+	.subcontent > div.orange { margin-right: 0; }
+}
+
 /* Phone */
 @media screen and (max-width:481px) {
-	body {
-		font-size: 11px;
+	body { font-size: 11px; }
+	
+	header, #follow, footer > img { display: none; }
+	
+	#subheading { line-height: 20px; }
+	
+	.subcontent > div {
+		width: auto;
+		float: none;
+		margin: 45px 0 0;
 	}
 	
-	#subheading {
-		line-height: 20px;
-	}
+	.subcontent > div.orange { margin-bottom: 0; }
+	
+	footer { padding: 10px 0; }
+		footer > p#copyright { text-align: center; margin-top: 15px; }
+		footer > ol { float: none; }
+			footer > ol ol { margin: 0; }
+			footer > ol > li {
+				float: none;
+				margin-right: 0;
+			}
+		footer a {
+			display: block;
+			border-bottom: 2px solid #888;
+			height: 45px;
+			line-height: 45px;
+			font-weight: bold;
+			font-size: 135%;
+			padding: 0 15px;
+		}
 }

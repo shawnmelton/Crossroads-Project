@@ -60,7 +60,7 @@ html {}
 				display: block;
 				margin: 25px auto;
 				max-width: 400px;
-				width: 50%;
+				width: 60%;
 				height: 45%;
 			}
 			#subheading {
@@ -79,7 +79,7 @@ html {}
 				.subcontent > div {
 					width: 27%;
 					float: left;
-					margin-right: 9%;
+					margin: 0 9% 0 0;
 					padding-left: 2px;
 					text-align: justify;
 				}
@@ -153,7 +153,9 @@ html {}
 			height: 160px;
 		}
 		body.learn > header { border-top: 2px solid #7ab6ca; }
+			body.learn > div a { color: #7ab6ca; }
 		body.connect > header { border-top: 2px solid #92b636; }
+			body.connect > div a { color: #92b636; }
 		body.find > header { border-top: 2px solid #e89c17; }
 			body.secondary #banner {
 				height: 100px;
@@ -194,11 +196,9 @@ html {}
 				top: -8px;
 				left: 3%;
 			}
-				#logo > img { max-width: 208px; }		
+				#logo > img { max-width: 208px; }
 			
-			body.secondary > div img {
-				border: 5px solid #48413e;
-			}
+			body.secondary > div img { border: 5px solid #48413e; }
 			body.secondary > div p { line-height: 20px; }
 			body.secondary > div p.before-small { margin-bottom: 2px; }
 			body.secondary > div p.small { 
@@ -206,7 +206,21 @@ html {}
 				color: #665;
 				margin: 0 0 25px;
 			}
+			
+			/* Find Styles */
+			#mapImg {
+				display: block;
+				float: right;
+				margin: 0 0 15px 35px;
+				cursor: pointer;
+			}
+				#mapImg:hover > img { border-color: #7ab6ca; }
 	
+			/* Connect Styles */
+			#worshipBanner {
+				width: 98%;
+				margin: 0 0 25px;
+			}
 			
 		footer {
 			padding: 25px;
