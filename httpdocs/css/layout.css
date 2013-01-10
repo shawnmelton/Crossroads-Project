@@ -146,11 +146,20 @@ html {}
 			}
 				body > div > section.alternate { background: #e4dfdd; }
 				
+			#logo-mobile {
+				width: 309px;
+				display: none;
+				border: 0;
+				margin: 0 auto;
+				cursor: pointer;
+			}
+				#logo-mobile > img { border: 0; }
+				
 		/* Secondary Styles */
 		body.secondary > header {
 			position: relative;
 			background: #fff;
-			height: 160px;
+			height: 100px;
 		}
 		body.learn > header { border-top: 2px solid #7ab6ca; }
 			body.learn > div a { color: #7ab6ca; }
@@ -198,6 +207,7 @@ html {}
 			}
 				#logo > img { max-width: 208px; }
 			
+		body.secondary > div { padding-top: 60px; }
 			body.secondary > div img { border: 5px solid #48413e; }
 			body.secondary > div p { line-height: 20px; }
 			body.secondary > div p.before-small { margin-bottom: 2px; }
@@ -214,7 +224,7 @@ html {}
 				margin: 0 0 15px 35px;
 				cursor: pointer;
 			}
-				#mapImg:hover > img { border-color: #7ab6ca; }
+				#mapImg:hover > img { border-color: #e89c17; }
 	
 			/* Connect Styles */
 			#worshipBanner {
@@ -251,7 +261,7 @@ html {}
 			#follow {
 				float: right;
 				margin-bottom: 15px;
-				width: 465px;
+				width: 410px;
 			}
 				#follow > h3 {
 					text-transform: uppercase;
@@ -284,6 +294,7 @@ html {}
 					margin-right: 55px;
 					min-width: 100px;
 				}
+				footer > ol > li.last { margin-right: 0; }
 					footer > ol > li > a {
 						color: #eee;
 						font-size: 135%;
@@ -294,3 +305,4 @@ html {}
 							line-height: 18px;
 						}
 							footer > ol > li li > a { float: none; }
+			#footer-right-clear { display: none; }
