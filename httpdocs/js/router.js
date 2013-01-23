@@ -1,12 +1,13 @@
 define([
-		'jquery',
-		'underscore',
-		'backbone',
-		'views/home',
-		'views/learn',
-		'views/connect',
-		'views/find'
-	], function($, _, Backbone, homeView, learnView, connectView, findView){
+	'jquery',
+	'underscore',
+	'backbone',
+	'tools/contentLocator',
+	'views/home',
+	'views/learn',
+	'views/connect',
+	'views/find'
+	], function($, _, Backbone, contentLocator, homeView, learnView, connectView, findView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -20,20 +21,30 @@ define([
 				"*actions": 'defaultAction'
 			},
 			
+			/**
+			 * Forward down the page to the appropriate content.
+			 */
+			forwardContent: function() {
+				contentLocator.move();
+			},
+			
 			showHome: function(){
 				homeView.render();
 			},
 			
 			showLearn: function() {
 				learnView.render();
+				this.forwardContent();
 			},
 			
 			showConnect: function() {
 				connectView.render();
+				this.forwardContent();
 			},
 			
 			showFind: function() {
 				findView.render();
+				this.forwardContent();
 			},
 			
 			defaultAction: function(actions){

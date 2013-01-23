@@ -1,8 +1,8 @@
 define([
-		"jquery",
-		"underscore",
-		"backbone",
-		'text!templates/connect.html'
+	"jquery",
+	"underscore",
+	"backbone",
+	'text!templates/connect.html'
 	], function($, _, Backbone, connectHTML){
 		var connectView = Backbone.View.extend({
 			content: $("body > div"),

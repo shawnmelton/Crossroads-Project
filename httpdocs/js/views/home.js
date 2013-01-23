@@ -1,8 +1,8 @@
 define([
-		"jquery",
-		"underscore",
-		"backbone",
-		'text!templates/home.html'
+	"jquery",
+	"underscore",
+	"backbone",
+	'text!templates/home.html'
 	], function($, _, Backbone, homeHTML){
 		var homeView = Backbone.View.extend({
 			content: $("body > div"),

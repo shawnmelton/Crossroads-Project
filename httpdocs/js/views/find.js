@@ -1,8 +1,8 @@
 define([
-		"jquery",
-		"underscore",
-		"backbone",
-		'text!templates/find.html'
+	"jquery",
+	"underscore",
+	"backbone",
+	'text!templates/find.html'
 	], function($, _, Backbone, findHTML){
 		var findView = Backbone.View.extend({
 			content: $("body > div"),

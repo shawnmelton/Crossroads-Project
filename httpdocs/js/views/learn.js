@@ -1,8 +1,8 @@
 define([
-		"jquery",
-		"underscore",
-		"backbone",
-		'text!templates/learn.html'
+	"jquery",
+	"underscore",
+	"backbone",
+	'text!templates/learn.html'
 	], function($, _, Backbone, learnHTML){
 		var learnView = Backbone.View.extend({
 			content: $("body > div"),
