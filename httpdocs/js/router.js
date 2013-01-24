@@ -25,7 +25,7 @@ define([
 			 * Forward down the page to the appropriate content.
 			 */
 			forwardContent: function() {
-				contentLocator.move();
+				contentLocator.moveByUrl();
 			},
 			
 			showHome: function(){

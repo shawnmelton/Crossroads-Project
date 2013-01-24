@@ -34,13 +34,23 @@ define([
 			
 			/**
 			 * Move to the appropriate anchor on the view.
+			 * Tag will be provided as an argument.
+			 */
+			moveByString: function(tag) {
+				var position = this.getAnchorPosition(tag);
+				if(position !== false) {
+					$("body").animate({scrollTop: position}, 2000);
+				}
+			},
+			
+			/**
+			 * Move to the appropriate anchor on the view.
 			 * Tags will be in the url with the marker "#!"
 			 */
-			move: function() {
+			moveByUrl: function() {
 				var tag = this.getUrlTag();
 				if(tag !== false) {
 					var position = this.getAnchorPosition(tag);
-					console.log(position);
 					if(position !== false) {
 						$("body").animate({scrollTop: position}, 2000);
 					}
