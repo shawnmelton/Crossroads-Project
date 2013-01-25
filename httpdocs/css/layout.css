@@ -18,6 +18,8 @@ html {}
 			background: -ms-linear-gradient(#fff, #ddd);
 			background: linear-gradient(#fff, #ddd);
 			overflow: hidden;
+			filter: 	progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd');
+    		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd')";
 		}
 			body.home #banner { display: none; }
 				body.home > header > nav > a {
@@ -30,6 +32,7 @@ html {}
 					height: 50px;
 					text-align: center;
 					text-shadow: 1px 1px 1px #aaa;
+					outline: none;
 				}
 					body.home > header > nav > a:hover {
 						background: #eee;
@@ -38,6 +41,8 @@ html {}
 						background: -o-linear-gradient(#f9ad28, #ddd);
 						background: -ms-linear-gradient(#f9ad28, #ddd);
 						background: linear-gradient(#fef0d7, #ddd);
+						filter: 	progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef0d7', endColorstr='#dddddd');
+    					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef0d7', endColorstr='#dddddd')";
 					}
 				body.home > header > nav > a.first { margin-left: 30%; }
 					body.home > header > nav > a > span {
@@ -56,6 +61,8 @@ html {}
 			overflow: hidden;
 		}
 			body.home #logo { display: none; }
+			#logo { outline: none; }
+				#logo > img { border: 0; }
 			#home-logo {
 				display: block;
 				margin: 25px auto;
@@ -190,6 +197,7 @@ html {}
 					height: 50px;
 					line-height: 45px;
 					text-align: center;
+					outline: none;
 				}
 					body.secondary > header > nav > a.active,
 					body.secondary > header > nav > a:hover { 
@@ -281,6 +289,7 @@ html {}
 					margin-right: 15px;
 					background-position: 0 0;
 					background-repeat: no-repeat;
+					outline: none;
 				}
 				#follow > a#facebook { background-image: url(../img/facebook.png); }
 				#follow > a#twitter { background-image: url(../img/twitter.png); }
@@ -299,10 +308,14 @@ html {}
 						color: #eee;
 						font-size: 135%;
 						display: block;
+						outline: none;
 					}
 						footer > ol ol {
 							margin-top: 7px;
 							line-height: 18px;
 						}
-							footer > ol > li li > a { float: none; }
+							footer > ol > li li > a {
+								float: none;
+								outline: none;
+							}
 			#footer-right-clear { display: none; }
