@@ -6,8 +6,9 @@ define([
 	'views/home',
 	'views/learn',
 	'views/connect',
-	'views/find'
-	], function($, _, Backbone, contentLocator, homeView, learnView, connectView, findView){
+	'views/find',
+	'views/404'
+	], function($, _, Backbone, contentLocator, homeView, learnView, connectView, findView, pageNotFoundView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -49,9 +50,13 @@ define([
 				findView.render();
 				this.forwardContent();
 			},
+
+			show404: function() {
+				pageNotFoundView.render();
+			},
 			
 			defaultAction: function(actions){
-				console.log('No route:', actions);
+				this.show404();
 			}
 		});
 		

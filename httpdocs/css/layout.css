@@ -57,7 +57,6 @@ html {}
 	
 		body > div { 
 			background: #fff;
-			min-height: 500px;
 			overflow: hidden;
 		}
 			body.home #logo { display: none; }
@@ -132,6 +131,7 @@ html {}
 			body > div a {
 				color: #d69015;
 				text-decoration: none;
+				outline: none;
 			}
 				body > div a:hover { text-decoration: underline; }
 				
@@ -260,6 +260,14 @@ html {}
 						border: 0;
 					}
 					#charlie-hall > a:hover > img { box-shadow: 0 0 30px #92b636; }
+
+			/* 404 Picture */
+			img#oops {
+				border-width: 3px;
+				width: 100%;
+				max-width: 700px;
+				margin-bottom: 50px;
+			}
 			
 		footer {
 			padding: 25px;
