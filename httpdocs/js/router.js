@@ -14,8 +14,11 @@ define([
 				'': 'showHome',
 				'/': 'showHome',
 				'learn': 'showLearn',
+				'learn/': 'showLearn',
 				'connect': 'showConnect',
+				'connect/': 'showConnect',
 				'find': 'showFind',
+				'find/': 'showFind',
 				
 				// Default
 				"*actions": 'defaultAction'
