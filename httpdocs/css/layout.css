@@ -239,6 +239,27 @@ html {}
 				width: 98%;
 				margin: 0 0 25px;
 			}
+
+			#mobile-video {
+				outline: none;
+			}
+				#mobile-video > img {
+					border: 0;
+					width: 90%;
+					max-width: 519px;
+				}
+
+			/* Charlie Hall Banner */
+				#charlie-hall > a {
+					cursor: pointer;
+					outline: none;
+				}
+					#charlie-hall img {
+						width: 98%;
+						max-width: 770px;
+						border: 0;
+					}
+					#charlie-hall > a:hover > img { box-shadow: 0 0 30px #92b636; }
 			
 		footer {
 			padding: 25px;
