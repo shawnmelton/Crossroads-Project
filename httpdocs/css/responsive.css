@@ -11,7 +11,7 @@
 	#follow, footer > ol { float: none; }
 	#copyright { margin-top: 5px; }
 	
-	footer > img { margin-top: 35px; }
+	footer > a > img { margin-top: 35px; }
 	
 	#footer-right-clear { display: block; }
 	
@@ -46,10 +46,11 @@
 	body { font-size: 11px; }
 	
 	body.secondary > div { padding-top: 0; }
+		body.secondary > div img { border-width: 1px; }
 	
 		header,
 		#follow, 
-		footer > img { display: none; }
+		footer > a#crc { display: none; }
 		
 		#logo-mobile { display: block; }
 		
@@ -62,6 +63,9 @@
 		}
 		
 		.subcontent > div.orange { margin-bottom: 0; }
+
+		#sermon-videos-iframe { display: none; }
+		#sermon-videos-html { display: block; }
 	
 	footer { padding: 10px 0; }
 		footer > p#copyright { text-align: center; margin-top: 15px; }

@@ -249,10 +249,13 @@ html {}
 				margin: 0 0 25px;
 			}
 
-			#mobile-video {
+			#sermon-videos-html { display: none; }
+			#mobile-video,
+			#sermon-videos-html {
 				outline: none;
 			}
-				#mobile-video > img {
+				#mobile-video > img,
+				#sermon-videos-html > img {
 					border: 0;
 					width: 90%;
 					max-width: 519px;
