@@ -6,6 +6,15 @@ html {}
 		color: #48413e;
 		margin: 0;
 	}
+
+	/* Loading style */
+	body.loading > header {
+		height: 100px;
+		overflow: hidden;
+	}
+	body.loading > header > nav { display: none; }
+	body.loading > div { min-height: 400px; }
+	body.loading > header > a#logo { display: none; }
 	
 	/* Home Page styling */
 		body.home > header {
@@ -273,7 +282,14 @@ html {}
 			padding: 25px;
 			color: #ccc;
 		}
-			footer > img { margin-bottom: 10px; }
+			footer > a#crc {
+				outline: none;
+				cursor: pointer;
+			}
+			footer > a#crc > img {
+				margin-bottom: 10px;
+				border: 0;
+			}
 			footer a {
 				color: #ccc;
 				text-decoration: none;
