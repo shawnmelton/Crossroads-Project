@@ -75,6 +75,7 @@ html {}
 				display: block;
 				margin: 25px auto;
 				max-width: 400px;
+				max-height: 324px;
 				width: 60%;
 				height: 45%;
 			}
