@@ -1,5 +1,5 @@
 var app = require("express").createServer();
-app.set("title", "Crossroads API");
+app.set("title", "CrossRoads API");
 
 // Add routes.
 require("./controllers/users.js");
