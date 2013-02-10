@@ -370,14 +370,14 @@ html {}
 			#footer-right-clear { display: none; }
 
 		#corner-banner {
+			display: none;
 			position: absolute;
 			top: 0;
 			right: 0;
-			display: block;
 			outline: none;
 			width: 163px;
 			height: 154px;
 			background: url(../img/charlie-hall-corner-banner.png) no-repeat 0 0;
 		}
-		body.secondary #corner-banner { display: none; }
+		body.home #corner-banner { display: block; }
 			#corner-banner > span { display: none; }
