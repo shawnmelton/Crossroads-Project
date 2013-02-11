@@ -3,12 +3,13 @@ define([
 	'underscore',
 	'backbone',
 	'tools/contentLocator',
+	'tools/homeHoverContent',
 	'views/home',
 	'views/learn',
 	'views/connect',
 	'views/find',
 	'views/404'
-	], function($, _, Backbone, contentLocator, homeView, learnView, connectView, findView, pageNotFoundView){
+	], function($, _, Backbone, contentLocator, homeHoverContent, homeView, learnView, connectView, findView, pageNotFoundView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -34,6 +35,10 @@ define([
 			
 			showHome: function(){
 				homeView.render();
+
+				if(!homeHoverContent.areHandlersSet()) {
+					homeHoverContent.setHandlers();
+				}
 			},
 			
 			showLearn: function() {

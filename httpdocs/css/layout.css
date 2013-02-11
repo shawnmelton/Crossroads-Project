@@ -368,16 +368,3 @@ html {}
 								outline: none;
 							}
 			#footer-right-clear { display: none; }
-
-		#corner-banner {
-			display: none;
-			position: absolute;
-			top: 0;
-			right: 0;
-			outline: none;
-			width: 163px;
-			height: 154px;
-			background: url(../img/charlie-hall-corner-banner.png) no-repeat 0 0;
-		}
-		body.home #corner-banner { display: block; }
-			#corner-banner > span { display: none; }
