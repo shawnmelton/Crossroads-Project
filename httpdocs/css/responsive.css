@@ -1,3 +1,9 @@
+/* Smaller browser screen */
+@media screen and (max-width: 1000px) {
+	#home-logo { display: block; }
+	#banners { display: none; }
+}
+
 /* Tablet */
 @media screen and (max-width:800px) {
 	body { font-size: 12px; }
@@ -12,9 +18,8 @@
 	#copyright { margin-top: 5px; }
 	
 	footer > a > img { margin-top: 35px; }
-	
 	#footer-right-clear { display: block; }
-	
+
 	#mapImg > img { width: 75%; }
 }
 

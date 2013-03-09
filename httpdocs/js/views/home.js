@@ -2,9 +2,9 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"tools/homeBanners",
+	"tools/cycle.jquery",
 	'text!templates/home.html'
-	], function($, _, Backbone, homeBanners, homeHTML){
+	], function($, _, Backbone, jCycle, homeHTML){
 		var homeView = Backbone.View.extend({
 			content: $("body > div"),
 			render: function(){
@@ -16,16 +16,14 @@ define([
 				// Apply styles for home page.
 				$("body").attr("class", "home");
 				$("#logo > img").attr("src", "/img/logo.png");
-
-				// Add banner rotation
-				if(!homeBanners.isRotating()) {
-					homeBanners.startRotation();
-				}
+				
+				// Banners
+				$("#banners").cycle({
+					delay: -4000
+				});
 			}
 		});
 		
-		// Our module now returns an instantiated view
-		// Sometimes you might return an un-instantiated view e.g. return projectListView
 		return new homeView;
 	}
 );

@@ -72,7 +72,7 @@ html {}
 			#logo { outline: none; }
 				#logo > img { border: 0; }
 			#home-logo {
-				display: block;
+				display: none;
 				margin: 25px auto;
 				max-width: 400px;
 				max-height: 324px;
@@ -368,3 +368,20 @@ html {}
 								outline: none;
 							}
 			#footer-right-clear { display: none; }
+
+
+	/* Home page banners */
+	#banners {
+		position: relative;
+		height: 324px;
+		overflow: hidden;
+		margin: 10px 0;
+	}
+		#banners img { 
+			display: block;
+			margin: 0 auto;
+		}
+		#banners > a {
+			cursor: pointer;
+			outline: none;
+		}
