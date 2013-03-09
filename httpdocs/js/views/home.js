@@ -19,7 +19,7 @@ define([
 				
 				// Banners
 				$("#banners").cycle({
-					delay: -4000
+					delay: -6000
 				});
 			}
 		});

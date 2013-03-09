@@ -246,7 +246,7 @@ html {}
 	
 			/* Connect Styles */
 			#worshipBanner {
-				width: 98%;
+				width: 100%;
 				margin: 0 0 25px;
 			}
 
@@ -268,11 +268,54 @@ html {}
 					outline: none;
 				}
 					#charlie-hall img {
-						width: 98%;
-						max-width: 770px;
+						display: block;
+						width: 100%;
 						border: 0;
+						margin: 0 auto;
 					}
 					#charlie-hall > a:hover > img { box-shadow: 0 0 30px #92b636; }
+
+			/* Special Events table */
+			#events-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 15px 0 20px;
+				background: #578;
+				background: -webkit-linear-gradient(#356, #578);
+				background: -moz-linear-gradient(#356, #578);
+				background: -o-linear-gradient(#356, #578);
+				background: -ms-linear-gradient(#356, #578);
+				background: linear-gradient(#356, #578);
+				border: 5px solid #245;
+				color: #fff;
+				text-transform: 1px 1px 1px #000;
+			}
+				#events-table th {
+					text-align: center;
+					font-weight: normal;
+					font-size: 150%;
+					padding: 15px 0;
+				}
+				#events-table td {
+					vertical-align: top;
+					padding: 5px 3% 20px;
+					width: 27%;
+					text-align: justify;
+					line-height: 18px;
+				}
+					#events-table td strong {
+						display: block;
+						margin-bottom: 5px;
+						font-weight: normal;
+						text-transform: uppercase;
+						font-size: 110%;
+						color: #cef;
+					}
+					#events-table td span {
+						font-weight: bold;
+						padding-right: 5px;
+						color: #92b636;
+					}
 
 			/* 404 Picture */
 			img#oops {
