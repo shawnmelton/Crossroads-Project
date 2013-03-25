@@ -30,7 +30,9 @@ define([
 			 * Forward down the page to the appropriate content.
 			 */
 			forwardContent: function() {
-				contentLocator.moveByUrl();
+				$(document).ready(function() {
+					contentLocator.moveByUrl();
+				});
 			},
 			
 			showHome: function(){
