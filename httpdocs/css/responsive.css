@@ -71,6 +71,12 @@
 
 		#sermon-videos-iframe { display: none; }
 		#sermon-videos-html { display: block; }
+
+		section.alternate > div > img {
+			float: none;
+			margin-right: 0;
+		}
+		section.alternate > div > div > strong { margin-bottom: 5px; }
 	
 	footer { padding: 10px 0; }
 		footer > p#copyright { text-align: center; margin-top: 15px; }
