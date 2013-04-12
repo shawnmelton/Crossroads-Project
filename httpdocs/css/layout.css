@@ -162,6 +162,39 @@ html {}
 				padding: 3% 5%;
 			}
 				body > div > section.alternate { background: #e4dfdd; }
+
+			/* Employee contact information. */
+			section.alternate > div {
+				float: left;
+				margin-right: 75px;
+			}
+				section.alternate > div > img {
+					float: left;
+					margin-right: 25px;
+					border-width: 2px !important;
+				}
+				section.alternate > div > div {
+					float: left;
+					min-width: 250px;
+					padding-top: 5px;
+				}
+					section.alternate > div > div > h4 {
+						margin: 0 0 5px;
+						font-weight: normal;
+						font-size: 125%;
+					}
+					section.alternate > div > div > strong {
+						display: block;
+						margin-bottom: 8px;
+						font-weight: normal;
+						text-transform: uppercase;
+						font-size: 90%;
+						color: #666;
+					}
+					section.alternate > div > div > table {
+						border-collapse: collapse;
+					}
+						section.alternate > div > div > table td { padding: 2px 0; }
 				
 			#logo-mobile {
 				width: 309px;
