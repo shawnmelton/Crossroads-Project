@@ -167,6 +167,11 @@ html {}
 			section.alternate > div {
 				float: left;
 				margin-right: 75px;
+				margin-bottom: 25px;
+			}
+			section.alternate > div.alternate-right {
+				margin-right: 0;
+				margin-bottom: 0;
 			}
 				section.alternate > div > img {
 					float: left;
@@ -175,7 +180,7 @@ html {}
 				}
 				section.alternate > div > div {
 					float: left;
-					min-width: 250px;
+					min-width: 240px;
 					padding-top: 5px;
 				}
 					section.alternate > div > div > h4 {
