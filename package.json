@@ -1,0 +1,30 @@
+{
+  "name": "Crossroads-Project",
+  "version": "0.0.2",
+  "description": "Crossroads Church Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawnmelton/Crossroads-Project.git"
+  },
+  "author": "Shawn Melton",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/shawnmelton/Crossroads-Project/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jst": "~0.5.1",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-contrib-htmlmin": "~0.1.3",
+    "grunt-contrib-watch": "~0.5.1"
+  }
+}
