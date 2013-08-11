@@ -470,7 +470,7 @@ html {}
 
 	#moms-info-table {
 		border-collapse: collapse;
-		margin: 25px 0 15px;
+		margin: 25px 0 5px;
 	}
 		#moms-info-table td {
 			vertical-align: top;
