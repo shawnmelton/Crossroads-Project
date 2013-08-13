@@ -476,3 +476,9 @@ html {}
 			vertical-align: top;
 			padding: 0 0 5px;
 		}
+	img#moms-header {
+		border-width: 0;
+		width: 100%;
+		max-width: 950px;
+		margin-bottom: 15px;
+	}
