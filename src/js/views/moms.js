@@ -1,8 +1,13 @@
 define(['jquery', 'backbone', 'templates/html.jst'], function($, Backbone, htmlJST){
 		var momsView = Backbone.View.extend({
-			content: $("body > div"),
+			el: "#main-content",
+
 			render: function(){
-				this.content.html(JST['src/js/templates/moms.html']({}));
+				if(this.$el.html() === null) { // IE fix.
+					this.$el = $("#main-content");
+				}
+
+				this.$el.html(JST['src/js/templates/moms.html']({}));
 
 				// Apply styles for home page.
 				$("body").attr("class", "secondary connect");

@@ -5,9 +5,14 @@ define([
 	'templates/html.jst'
 	], function($, Backbone, jCycle, htmlJST){
 		var homeView = Backbone.View.extend({
-			content: $("body > div"),
+			el: "#main-content",
+
 			render: function(){
-				this.content.html(JST['src/js/templates/home.html']({}));
+				if(this.$el.html() === null) { // IE fix.
+					this.$el = $("#main-content");
+				}
+
+				this.$el.html(JST['src/js/templates/home.html']({}));
 				
 				// Apply styles for home page.
 				$("body").attr("class", "home");

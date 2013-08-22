@@ -4,9 +4,14 @@ define([
 	'templates/html.jst'
 	], function($, Backbone, htmlJST){
 		var findView = Backbone.View.extend({
-			content: $("body > div"),
+			el: "#main-content",
+
 			render: function(){
-				this.content.html(JST['src/js/templates/find.html']({}));
+				if(this.$el.html() === null) { // IE fix.
+					this.$el = $("#main-content");
+				}
+
+				this.$el.html(JST['src/js/templates/find.html']({}));
 				
 				// Apply styles for home page.
 				$("body").attr("class", "secondary find");

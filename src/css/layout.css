@@ -461,6 +461,7 @@ html {}
 		#banners img { 
 			display: block;
 			margin: 0 auto;
+			border: 0;
 		}
 		#banners > a {
 			cursor: pointer;
