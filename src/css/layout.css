@@ -15,6 +15,8 @@ html {}
 	body.loading > header > nav { display: none; }
 	body.loading > div { min-height: 400px; }
 	body.loading > header > a#logo { display: none; }
+
+	section p > strong { font-family: arial; }
 	
 	/* Home Page styling */
 		body.home > header {
@@ -264,7 +266,7 @@ html {}
 				#logo > img { max-width: 208px; }
 			
 		body.secondary > div { padding-top: 60px; }
-			body.secondary > div img { border: 5px solid #48413e; }
+			body.secondary > div img { border: 2px solid #48413e; }
 			body.secondary > div p { line-height: 20px; }
 			body.secondary > div p.before-small { margin-bottom: 2px; }
 			body.secondary > div p.small { 
