@@ -9,8 +9,10 @@ define([
 	'views/connect',
 	'views/find',
 	'views/404',
-	'views/moms'
-	], function($, _, Backbone, contentLocator, homeHoverContent, homeView, learnView, connectView, findView, pageNotFoundView, momsView){
+	'views/moms',
+	'views/iAmCRC'
+	], function($, _, Backbone, contentLocator, homeHoverContent, homeView, learnView, connectView, findView, 
+		pageNotFoundView, momsView, iAmCRCView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -24,6 +26,8 @@ define([
 				'find/': 'showFind',
 				'moms': 'showMoms',
 				'moms/': 'showMoms',
+				'i-am-crossroads': 'showIAm',
+				'i-am-crossroads/': 'showIAm',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -44,6 +48,10 @@ define([
 				if(!homeHoverContent.areHandlersSet()) {
 					homeHoverContent.setHandlers();
 				}
+			},
+
+			showIAm: function() {
+				iAmCRCView.render();
 			},
 			
 			showLearn: function() {
