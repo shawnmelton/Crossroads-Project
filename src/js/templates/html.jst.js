@@ -44,7 +44,7 @@ this["JST"]["src/js/templates/iAmCRC.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-blue-small.png" alt="CrossRoads Church Norfolk"></a>\n<section id="iamcrc">\n    <p><img src="/img/iAmBanner.png" alt="I Am CrossRoads" style="border: 0 !important; width: 300px;"></p>\n    <p>CrossRoads is doing a new sermon series talking about the church.  Check out the video below to preview the series.  <strong>More details will be coming soon!</strong></p>\n</section>';
+__p += '<a href="/" id="logo-mobile"><img src="/img/logo-blue-small.png" alt="CrossRoads Church Norfolk"></a>\n<section id="iamcrc">\n    <p><img src="/img/iAmBanner.png" alt="I Am CrossRoads" style="border: 0 !important; width: 300px;"></p>\n    <h2>Series Promo Video</h2>\n    <p>CrossRoads is doing a new sermon series talking about the church.  Check out the video below to preview the series.  Continue to <strong>check back with us every week</strong> for additional information.</p>\n</section>\n<section class="alternate">\n    <h2>Week 1</h2>\n    <p>Download this week\'s study guide by <a href="/docs/week1-study-guide.pdf" target="_blank">clicking here</a>.</p>\n</section>';
 
 }
 return __p

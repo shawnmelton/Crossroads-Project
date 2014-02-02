@@ -26,7 +26,12 @@ define([
 
             showVideo: function() {
                 var width = Math.floor($(window).width() * 0.88),
-                    height = Math.floor((width * 2) / 3);
+                    height = Math.floor((width * 9) / 16);
+
+                if(width > 1000) {
+                    width = 1000;
+                    height = 562;
+                } 
 
                 $('#iamcrc').append('<video width="'+ width +'" height="'+ height +'" controls="controls"><source src="/video/i-am-crossroads.mp4" type="video/mp4"></video>');
             }
