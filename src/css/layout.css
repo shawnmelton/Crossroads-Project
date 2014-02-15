@@ -502,6 +502,7 @@ html {}
 		line-height: 25px;
 	}
 	body > div a.studyGuide { background-image: url(../img/study-guide.png); }
+	body > div a.sermonNotes { background-image: url(../img/cross.png); }
 	body > div a.video { background-image: url(../img/video.png); }
 	p.clearfix:after {
 		display: table;
