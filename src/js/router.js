@@ -10,9 +10,10 @@ define([
 	'views/find',
 	'views/404',
 	'views/moms',
-	'views/iAmCRC'
+	'views/iAmCRC',
+	'views/easter'
 	], function($, _, Backbone, contentLocator, homeHoverContent, homeView, learnView, connectView, findView, 
-		pageNotFoundView, momsView, iAmCRCView){
+		pageNotFoundView, momsView, iAmCRCView, easterView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -26,6 +27,8 @@ define([
 				'find/': 'showFind',
 				'moms': 'showMoms',
 				'moms/': 'showMoms',
+				'easter': 'showEaster',
+				'easter/': 'showEaster',
 				'i-am-crossroads': 'showIAm',
 				'i-am-crossroads/': 'showIAm',
 				
@@ -45,7 +48,7 @@ define([
 			showHome: function(){
 				homeView.render();
 
-				if(!homeHoverContent.areHandlersSet()) {
+				if($(document).width() > 800 && !homeHoverContent.areHandlersSet()) {
 					homeHoverContent.setHandlers();
 				}
 			},
@@ -62,6 +65,10 @@ define([
 			showConnect: function() {
 				connectView.render();
 				this.forwardContent();
+			},
+
+			showEaster: function() {
+				easterView.render();
 			},
 			
 			showFind: function() {

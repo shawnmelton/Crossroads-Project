@@ -122,5 +122,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
 	grunt.loadNpmTasks("grunt-contrib-htmlmin");
 	grunt.loadNpmTasks("grunt-contrib-watch");
-	grunt.registerTask('default', ['jst', 'jshint', 'requirejs', 'uglify', 'cssmin', 'concat', 'imagemin', 'htmlmin', 'watch']);
+	grunt.registerTask('default', ['jst', 'jshint', 'requirejs', 'uglify', 'cssmin', 'concat', 'htmlmin']);
 };
