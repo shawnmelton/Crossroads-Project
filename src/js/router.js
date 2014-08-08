@@ -11,9 +11,11 @@ define([
 	'views/404',
 	'views/moms',
 	'views/iAmCRC',
-	'views/easter'
+	'views/easter',
+	'views/daddydance',
+	'views/threeDMConf'
 	], function($, _, Backbone, contentLocator, homeHoverContent, homeView, learnView, connectView, findView, 
-		pageNotFoundView, momsView, iAmCRCView, easterView){
+		pageNotFoundView, momsView, iAmCRCView, easterView, daddyDanceView, threeDMConfView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -29,8 +31,12 @@ define([
 				'moms/': 'showMoms',
 				'easter': 'showEaster',
 				'easter/': 'showEaster',
+				'daddy-daughter-dance': 'showDance',
+				'daddy-daughter-dance/': 'showDance',
 				'i-am-crossroads': 'showIAm',
 				'i-am-crossroads/': 'showIAm',
+				'3dm-conference': 'show3dmConference',
+				'3dm-conference/': 'show3dmConference',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -51,6 +57,14 @@ define([
 				if($(document).width() > 800 && !homeHoverContent.areHandlersSet()) {
 					homeHoverContent.setHandlers();
 				}
+			},
+
+			show3dmConference: function() {
+				threeDMConfView.render();
+			},
+
+			showDance: function() {
+				daddyDanceView.render();
 			},
 
 			showIAm: function() {
