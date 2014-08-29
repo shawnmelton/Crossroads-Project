@@ -1,21 +1,6 @@
-define([
-	'jquery',
-	'underscore',
-	'backbone',
-	'tools/contentLocator',
-	'tools/homeHoverContent',
-	'views/home',
-	'views/learn',
-	'views/connect',
-	'views/find',
-	'views/404',
-	'views/moms',
-	'views/iAmCRC',
-	'views/easter',
-	'views/daddydance',
-	'views/threeDMConf'
-	], function($, _, Backbone, contentLocator, homeHoverContent, homeView, learnView, connectView, findView, 
-		pageNotFoundView, momsView, iAmCRCView, easterView, daddyDanceView, threeDMConfView){
+define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/contentLocator',
+	'views/home', 'views/find', 'views/connectSecondary', 'views/learnSecondary'], 
+	function($, _, Backbone, homeHoverContent, contentLocator, homeView, findView, connSecView, learnSecView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -23,10 +8,18 @@ define([
 				'/': 'showHome',
 				'learn': 'showLearn',
 				'learn/': 'showLearn',
+				'learn/beliefs': 'showLearn',
+				'learn/identity': 'showLearn',
+				'learn/mission': 'showLearn',
+				'learn/sermons': 'showLearn',
 				'connect': 'showConnect',
 				'connect/': 'showConnect',
+				'connect/life-groups': 'showConnect',
+				'connect/whats-going-on': 'showConnect',
+				'connect/worship': 'showConnect',
 				'find': 'showFind',
 				'find/': 'showFind',
+				'find/contact': 'showFind',
 				'moms': 'showMoms',
 				'moms/': 'showMoms',
 				'easter': 'showEaster',
@@ -37,18 +30,11 @@ define([
 				'i-am-crossroads/': 'showIAm',
 				'3dm-conference': 'show3dmConference',
 				'3dm-conference/': 'show3dmConference',
+				'military-wives': 'showMilitaryWives',
+				'military-wives/': 'showMilitaryWives',
 				
 				// Default
 				"*actions": 'defaultAction'
-			},
-			
-			/**
-			 * Forward down the page to the appropriate content.
-			 */
-			forwardContent: function() {
-				$(document).ready(function() {
-					contentLocator.moveByUrl();
-				});
 			},
 			
 			showHome: function(){
@@ -60,42 +46,58 @@ define([
 			},
 
 			show3dmConference: function() {
-				threeDMConfView.render();
+				learnSecView.render('threeDMConf');
 			},
 
 			showDance: function() {
-				daddyDanceView.render();
+				connSecView.render('daddydance');
 			},
 
 			showIAm: function() {
-				iAmCRCView.render();
+				learnSecView.render('iAmCRC');
 			},
+
+			/*showIAmCRCVideo: function() {
+				var width = Math.floor($(window).width() * 0.88),
+					height = Math.floor((width * 9) / 16);
+
+				if(width > 1000) {
+					width = 1000;
+					height = 562;
+				} 
+
+				$('#iamcrc').append('<video width="'+ width +'" height="'+ height +'" controls="controls"><source src="/video/i-am-crossroads.mp4" type="video/mp4"></video>');
+			},*/
 			
 			showLearn: function() {
-				learnView.render();
-				this.forwardContent();
+				learnSecView.render('learn');
+				contentLocator.moveByUrl();
 			},
 			
 			showConnect: function() {
-				connectView.render();
-				this.forwardContent();
+				connSecView.render('connect');
+				contentLocator.moveByUrl();
 			},
 
 			showEaster: function() {
-				easterView.render();
+				connSecView.render('easter');
 			},
 			
 			showFind: function() {
 				findView.render();
-				this.forwardContent();
+				contentLocator.moveByUrl();
 			},
 
 			showMoms: function() {
-				momsView.render();
+				connSecView.render('moms');
+			},
+
+			showMilitaryWives: function() {
+				connSecView.render('militaryWives');
 			},
 
 			show404: function() {
-				pageNotFoundView.render();
+				learnSecView.render('404');
 			},
 			
 			defaultAction: function(actions){

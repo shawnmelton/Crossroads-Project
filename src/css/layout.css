@@ -93,6 +93,12 @@ html {}
 			.subcontent {
 				width: 75%;
 				margin: 0 auto;
+				padding-bottom: 100px;
+			}
+			.subcontent:after {
+				content: '';
+				clear: both;
+				display: table;
 			}
 				.subcontent > div {
 					width: 27%;
@@ -133,6 +139,32 @@ html {}
 						line-height: 20px;
 						font-size: 115%;
 					}
+
+			#quarter-content {
+				width: 1000px;
+				margin: 0 auto;
+				padding-bottom: 100px;
+			}
+			#quarter-content:after {
+				content: '';
+				clear: both;
+				display: table;
+			}
+				#quarter-content > a {
+					display: block;
+					margin: 0 25px;
+					width: 200px;
+					float: left;
+					text-align: center;
+					text-decoration: none;
+				}
+					#quarter-content > a > span {
+						text-transform: uppercase;
+						font-size: 15px;
+						font-weight: 100;
+					}
+
+
 		
 			.clear {
 				clear: both;
