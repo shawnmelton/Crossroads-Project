@@ -2,6 +2,12 @@
 @media screen and (max-width: 1000px) {
 	#home-logo { display: block; }
 	#banners { display: none; }
+
+	#quarter-content { width: 500px; }
+		#quarter-content > a.split { clear: left; }
+		#quarter-content > a.split,
+		#quarter-content > a.split-next { margin-top: 25px; }
+
 }
 
 /* Tablet */
@@ -42,6 +48,14 @@
 		#mapImg > img {
 			width: 95%;
 			max-width: 410px;
+		}
+}
+
+@media screen and (max-width:500px) {
+	#quarter-content { width: 250px; }
+		#quarter-content > a {
+			clear: left;
+			margin-bottom: 25px;
 		}
 }
 

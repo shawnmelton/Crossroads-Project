@@ -32,6 +32,8 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'3dm-conference/': 'show3dmConference',
 				'military-wives': 'showMilitaryWives',
 				'military-wives/': 'showMilitaryWives',
+				'i-still-do': 'showIStillDo',
+				'i-still-do/': 'showIStillDo',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -55,6 +57,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showIAm: function() {
 				learnSecView.render('iAmCRC');
+			},
+
+			showIStillDo: function() {
+				connSecView.render('iStillDo');
 			},
 
 			/*showIAmCRCVideo: function() {
