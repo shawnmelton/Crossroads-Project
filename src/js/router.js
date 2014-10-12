@@ -34,9 +34,15 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'military-wives/': 'showMilitaryWives',
 				'i-still-do': 'showIStillDo',
 				'i-still-do/': 'showIStillDo',
+				'administrative-pastor': 'showExecPastor',
+				'administrative-pastor/': 'showExecPastor',
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showExecPastor: function() {
+				learnSecView.render('execPastor');
 			},
 			
 			showHome: function(){

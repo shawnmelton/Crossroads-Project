@@ -251,7 +251,7 @@ html {}
 			height: 100px;
 		}
 		body.learn > header { border-top: 2px solid #7ab6ca; }
-			body.learn > div a { color: #7ab6ca; }
+			body.learn > div a { color: #6597a8; }
 		body.connect > header { border-top: 2px solid #92b636; }
 			body.connect > div a { color: #92b636; }
 		body.find > header { border-top: 2px solid #e89c17; }
