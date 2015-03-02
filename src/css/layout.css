@@ -22,15 +22,8 @@ html {}
 		body.home > header {
 			border-top: 2px solid #e89c17;
 			height: 50px;
-			background: #ddd;
-			background: -webkit-linear-gradient(#fff, #ddd);
-			background: -moz-linear-gradient(#fff, #ddd);
-			background: -o-linear-gradient(#fff, #ddd);
-			background: -ms-linear-gradient(#fff, #ddd);
-			background: linear-gradient(#fff, #ddd);
+			background: #eee;
 			overflow: hidden;
-			filter: 	progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd');
-    		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd')";
 		}
 			body.home #banner { display: none; }
 				body.home > header > nav > a {
@@ -39,26 +32,21 @@ html {}
 					text-decoration: none;
 					color: #48413e;
 					font-size: 125%;
+					font-weight: 100;
 					width: 13%;
-					height: 50px;
+					height: 46px;
 					text-align: center;
-					text-shadow: 1px 1px 1px #aaa;
 					outline: none;
+					border: 2px solid #eee;
+					border-width: 2px 0;
 				}
 					body.home > header > nav > a:hover {
-						background: #eee;
-						background: -webkit-linear-gradient(#fef0d7, #ddd);
-						background: -moz-linear-gradient(#f9ad28, #ddd);
-						background: -o-linear-gradient(#f9ad28, #ddd);
-						background: -ms-linear-gradient(#f9ad28, #ddd);
-						background: linear-gradient(#fef0d7, #ddd);
-						filter: 	progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef0d7', endColorstr='#dddddd');
-    					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef0d7', endColorstr='#dddddd')";
+						border-top-color: #e89c17;
 					}
 				body.home > header > nav > a.first { margin-left: 30%; }
 					body.home > header > nav > a > span {
 						display: block;
-						margin: 7px 0;
+						margin: 5px 0;
 						line-height: 36px;
 						height: 36px;
 						border-left: 1px solid #ccc;
@@ -125,8 +113,8 @@ html {}
 						.subcontent > div a { font-size: 120%; }
 						.subcontent > div.blue > .bar { border-left-color: #7ab6ca; }
 						.subcontent > div.blue a { color: #7ab6ca; }
-						.subcontent > div.green > .bar { border-left-color: #92b636; }
-						.subcontent > div.green a { color: #92b636; }
+						.subcontent > div.green > .bar { border-left-color: #729616; }
+						.subcontent > div.green a { color: #729616; }
 						.subcontent > div.orange > .bar { border-left-color: #e89c17; }
 					.subcontent > div > h3 {
 						margin: 5px 0 15px 5px;
@@ -252,8 +240,8 @@ html {}
 		}
 		body.learn > header { border-top: 2px solid #7ab6ca; }
 			body.learn > div a { color: #6597a8; }
-		body.connect > header { border-top: 2px solid #92b636; }
-			body.connect > div a { color: #92b636; }
+		body.connect > header { border-top: 2px solid #729616; }
+			body.connect > div a { color: #729616; }
 		body.find > header { border-top: 2px solid #e89c17; }
 			body.secondary #banner {
 				height: 100px;
@@ -287,7 +275,7 @@ html {}
 						background: #fcfcfc;
 					}
 					body.secondary > header > nav > a.second.active,
-					body.secondary > header > nav > a.second:hover { border-top-color: #92b636; }
+					body.secondary > header > nav > a.second:hover { border-top-color: #729616; }
 					body.secondary > header > nav > a.third.active,
 					body.secondary > header > nav > a.third:hover { border-top-color: #e89c17; }
 			#logo {
@@ -345,7 +333,7 @@ html {}
 						border: 0;
 						margin: 0 auto;
 					}
-					#charlie-hall > a:hover > img { box-shadow: 0 0 30px #92b636; }
+					#charlie-hall > a:hover > img { box-shadow: 0 0 30px #729616; }
 
 			/* Special Events table */
 			#events-table {
@@ -386,7 +374,7 @@ html {}
 					#events-table td span {
 						font-weight: bold;
 						padding-right: 5px;
-						color: #92b636;
+						color: #729616;
 					}
 
 			/* 404 Picture */
@@ -548,3 +536,18 @@ html {}
 		padding-right: 10px;
 		vertical-align: top;
 	}
+
+	.learningCommTable {
+		border-collapse: collapse;
+		margin: 25px 0;
+	}
+		.learningCommTable td {
+			padding: 25px 35px;
+			text-align: center;
+			background: #ddd;
+			border-right: 1px solid #48413e;
+		}
+		.learningCommTable td.noBorder { border-right-width: 0px; }
+			.learningCommTable td strong {
+				font-family: arial;
+			}

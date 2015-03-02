@@ -17,6 +17,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'connect/life-groups': 'showConnect',
 				'connect/whats-going-on': 'showConnect',
 				'connect/worship': 'showConnect',
+				'connect/upside-down-christmas': 'showUpsideDownChristmas',
 				'find': 'showFind',
 				'find/': 'showFind',
 				'find/contact': 'showFind',
@@ -36,13 +37,27 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'i-still-do/': 'showIStillDo',
 				'administrative-pastor': 'showExecPastor',
 				'administrative-pastor/': 'showExecPastor',
+				'in-the-news': 'showNews',
+				'in-the-news/': 'showNews',
+				'cares': 'showCares',
+				'cares/': 'showCares',
+				'administrative-assistant': 'showAdminAsst',
+				'administrative-assistant/': 'showAdminAsst',
 				
 				// Default
 				"*actions": 'defaultAction'
 			},
 
+			showAdminAsst: function() {
+				learnSecView.render('adminAssistant');
+			},
+
 			showExecPastor: function() {
 				learnSecView.render('execPastor');
+			},
+
+			showCares: function() {
+				connSecView.render('cares');
 			},
 			
 			showHome: function(){
@@ -106,6 +121,14 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showMilitaryWives: function() {
 				connSecView.render('militaryWives');
+			},
+
+			showNews: function() {
+				learnSecView.render('inTheNews');
+			},
+
+			showUpsideDownChristmas: function() {
+				connSecView.render('upsideDownChristmas');
 			},
 
 			show404: function() {
