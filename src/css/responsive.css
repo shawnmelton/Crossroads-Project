@@ -19,6 +19,7 @@
 
 	#subheading { width: 85%; }
 	.subcontent { width: 90%; }
+	#job-posting, #job-posting-2 { width: auto; }
 	
 	#follow, footer > ol { float: none; }
 	#copyright { margin-top: 5px; }
@@ -111,4 +112,11 @@
 		}
 
 	#corner-banner { display: none; }
+
+	#job-posting > span,
+	#job-posting-2 > span {
+		display: block;
+		height: 7px;
+		overflow: hidden;
+	}
 }

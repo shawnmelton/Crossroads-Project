@@ -43,6 +43,8 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'cares/': 'showCares',
 				'administrative-assistant': 'showAdminAsst',
 				'administrative-assistant/': 'showAdminAsst',
+				'childrens-director': 'showKidsDirector',
+				'childrens-director/': 'showKidsDirector',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -95,6 +97,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 				$('#iamcrc').append('<video width="'+ width +'" height="'+ height +'" controls="controls"><source src="/video/i-am-crossroads.mp4" type="video/mp4"></video>');
 			},*/
+
+			showKidsDirector: function() {
+				learnSecView.render('childrensDirector');
+			},
 			
 			showLearn: function() {
 				learnSecView.render('learn');
