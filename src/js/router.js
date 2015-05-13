@@ -25,6 +25,8 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'moms/': 'showMoms',
 				'easter': 'showEaster',
 				'easter/': 'showEaster',
+				'family-on-mission': 'showFamilyOnMission',
+				'family-on-mission/': 'showFamilyOnMission',
 				'daddy-daughter-dance': 'showDance',
 				'daddy-daughter-dance/': 'showDance',
 				'i-am-crossroads': 'showIAm',
@@ -114,6 +116,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showEaster: function() {
 				connSecView.render('easter');
+			},
+
+			showFamilyOnMission: function() {
+				connSecView.render('familyOnMission');
 			},
 			
 			showFind: function() {

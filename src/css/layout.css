@@ -82,7 +82,7 @@ html {}
 				font-weight: normal;
 				font-size: 125%;
 				text-align: justify;
-				line-height: 26px;
+				line-height: 1.9;
 				width: 75%;
 			}
 			.subcontent {
@@ -131,7 +131,7 @@ html {}
 					}
 					.subcontent > div > p {
 						margin: 5px 0 10px 5px;
-						line-height: 20px;
+						line-height: 1.6;
 						font-size: 115%;
 					}
 
@@ -294,7 +294,7 @@ html {}
 			
 		body.secondary > div { padding-top: 60px; }
 			body.secondary > div img { border: 2px solid #48413e; }
-			body.secondary > div p { line-height: 20px; }
+			body.secondary > div p { line-height: 1.9; }
 			body.secondary > div p.before-small { margin-bottom: 2px; }
 			body.secondary > div p.small { 
 				font-size: 85%;
