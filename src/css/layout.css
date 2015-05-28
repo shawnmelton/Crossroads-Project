@@ -560,8 +560,7 @@ html {}
 			}
 
 
-#job-posting,
-#job-posting-2 {
+.jobPosting {
 	width: 75%;
 	font-size: 120%;
 	border-top: 5px solid #e89c17;
@@ -571,13 +570,11 @@ html {}
 	background: #eee;
 }
 #job-posting-2 { border-top-color: #729616; }
-	#job-posting > h3,
-	#job-posting-2 > h3 { margin-top: 0; }
-	#job-posting > a,
-	#job-posting-2 > a {
+#job-posting-3 { border-top-color: #7ab6ca; }
+	.jobPosting > h3 { margin-top: 0; }
+	.jobPosting > a {
 		color: #48413e;
 		font-size: 90%;
 	}
 		.icon,
-		#job-posting > a > span,
-		#job-posting-2 > a > span { font-family: 'fontawesome' }
+		.jobPosting > a > span { font-family: 'fontawesome' }

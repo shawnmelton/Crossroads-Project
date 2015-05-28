@@ -47,6 +47,8 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'administrative-assistant/': 'showAdminAsst',
 				'childrens-director': 'showKidsDirector',
 				'childrens-director/': 'showKidsDirector',
+				'the-camp': 'showCamp',
+				'the-camp/': 'showCamp',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -62,6 +64,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showCares: function() {
 				connSecView.render('cares');
+			},
+
+			showCamp: function() {
+				connSecView.render('theCamp');
 			},
 			
 			showHome: function(){
