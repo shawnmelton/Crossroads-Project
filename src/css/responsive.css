@@ -19,7 +19,7 @@
 
 	#subheading { width: 85%; }
 	.subcontent { width: 90%; }
-	#job-posting, #job-posting-2 { width: auto; }
+	.jobPosting { width: auto; }
 	
 	#follow, footer > ol { float: none; }
 	#copyright { margin-top: 5px; }

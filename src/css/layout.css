@@ -412,6 +412,8 @@ html {}
 			footer > p {
 				margin-bottom: 0px;
 				font-size: 90%;
+				padding: 0 6px;
+				color: #aaa;
 			}
 			#copyright {
 				color: #888;

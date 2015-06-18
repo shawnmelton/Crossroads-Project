@@ -20,7 +20,7 @@ define([
 				
 				// Banners
 				$("#banners").cycle({
-					delay: -6000
+					timeout: 5000
 				});
 			}
 		});
