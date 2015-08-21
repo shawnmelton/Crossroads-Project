@@ -49,6 +49,8 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'childrens-director/': 'showKidsDirector',
 				'the-camp': 'showCamp',
 				'the-camp/': 'showCamp',
+				'starting-point': 'showStartingPoint',
+				'starting-point/': 'showStartingPoint',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -68,6 +70,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showCamp: function() {
 				connSecView.render('theCamp');
+			},
+
+			showStartingPoint: function() {
+				connSecView.render('startingPoint');
 			},
 			
 			showHome: function(){
