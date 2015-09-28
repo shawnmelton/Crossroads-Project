@@ -51,6 +51,8 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'the-camp/': 'showCamp',
 				'starting-point': 'showStartingPoint',
 				'starting-point/': 'showStartingPoint',
+				'women': 'showWomen',
+				'women/': 'showWomen',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -58,6 +60,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showAdminAsst: function() {
 				learnSecView.render('adminAssistant');
+			},
+
+			showWomen: function() {
+				connSecView.render('women');
 			},
 
 			showExecPastor: function() {
