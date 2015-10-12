@@ -53,9 +53,15 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'starting-point/': 'showStartingPoint',
 				'women': 'showWomen',
 				'women/': 'showWomen',
+				'fall-festival': 'showFallFestival',
+				'fall-festival/': 'showFallFestival',
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showFallFestival: function() {
+				connSecView.render('fallFestival');
 			},
 
 			showAdminAsst: function() {
