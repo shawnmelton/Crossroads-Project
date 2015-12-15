@@ -580,3 +580,12 @@ html {}
 	}
 		.icon,
 		.jobPosting > a > span { font-family: 'fontawesome' }
+
+
+	.kidsTable {
+		border-collapse: border;
+	}
+		.kidsTable td {
+			padding: 15px 25px;
+			vertical-align: top;
+		}
