@@ -6,6 +6,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				// Define some URL routes
 				'': 'showHome',
 				'/': 'showHome',
+				'abide': 'showAbide',
 				'learn': 'showLearn',
 				'learn/beliefs': 'showLearn',
 				'learn/identity': 'showLearn',
@@ -40,6 +41,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showAbide: function() {
+				connSecView.render('abide');
 			},
 
 			showJustice: function() {
