@@ -38,6 +38,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'fall-festival': 'showFallFestival',
 				'justice-sunday': 'showJustice',
 				'kids': 'showKids',
+				'imperfect-conference': 'showImperfectConference',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -49,6 +50,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showJustice: function() {
 				connSecView.render('justiceSunday');
+			},
+
+			showImperfectConference: function() {
+				connSecView.render('imperfectConference');
 			},
 
 			showKids: function() {
