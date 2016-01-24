@@ -24,6 +24,29 @@ html {}
 	body.loading > header > a#logo { display: none; }
 
 	section p > strong { font-family: arial; }
+
+
+	.importantUpdate { padding: 10px 0; }
+		.importantUpdate > p {
+			padding: 15px 25px 20px;
+			background: #fee;
+			font-weight: bold;
+			font-family: arial;
+			border: 2px solid #933;
+			line-height: 1.6;
+			text-align: center;
+			color: #a33;
+			text-shadow: 0 0 1px #ddd;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+			.importantUpdate > p > span {
+				display: block;
+				margin-bottom: 10px;
+				font-family: 'fontawesome';
+				opacity: 0.8;
+				font-size: 200%;
+			}
 	
 	/* Home Page styling */
 		body.home > header {
@@ -293,6 +316,7 @@ html {}
 				#logo > img { max-width: 208px; }
 			
 		body.secondary > div { padding-top: 60px; }
+		body.secondary > div.importantUpdate { padding-top: 80px; }
 			body.secondary > div img { border: 2px solid #48413e; }
 			body.secondary > div p { line-height: 1.9; }
 			body.secondary > div p.before-small { margin-bottom: 2px; }
