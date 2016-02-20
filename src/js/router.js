@@ -39,6 +39,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'justice-sunday': 'showJustice',
 				'kids': 'showKids',
 				'imperfect-conference': 'showImperfectConference',
+				'membership-class': 'showMembershipClass',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -50,6 +51,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showJustice: function() {
 				connSecView.render('justiceSunday');
+			},
+
+			showMembershipClass: function() {
+				learnSecView.render('membershipClass');
 			},
 
 			showImperfectConference: function() {
