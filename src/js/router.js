@@ -40,6 +40,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'kids': 'showKids',
 				'imperfect-conference': 'showImperfectConference',
 				'membership-class': 'showMembershipClass',
+				'spring-picnic': 'showSpringPicnic',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -170,6 +171,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showUpsideDownChristmas: function() {
 				connSecView.render('upsideDownChristmas');
+			},
+
+			showSpringPicnic: function() {
+				connSecView.render('springPicnic');
 			},
 
 			show404: function() {

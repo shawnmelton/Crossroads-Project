@@ -10,7 +10,17 @@ module.exports = function(grunt) {
 			}
 		},
 		jshint: {
-			all: ['gruntfile.js', 'src/js/*.js', 'src/js/tools/*.js', 'src/js/views/*.js']
+			default: {
+				src: [
+					'Gruntfile.js',
+					'src/js/*.js',
+					'src/js/tools/*.js',
+					'src/js/views/*.js'
+				],
+				options: {
+					'-W107': true
+				}
+			}
 		},
 		requirejs: {
 			compile: {

@@ -12,7 +12,26 @@ define([
 					this.$el = $("#main-content");
 				}
 
-				this.$el.html(JST['src/js/templates/home.html']({}));
+				var banners = [{
+					url: 'javascript:void(0);',
+					img: '/img/logo.png'
+				},{
+					url: '/the-camp',
+					img: '/img/camp-banner.png'
+				},{
+					url: '/starting-point',
+					img: '/img/starting-point.png'
+				},{
+					url: '/women',
+					img: '/img/CRwomen_banner.gif'
+				},{
+					url: '/learn/sermons',
+					img: '/img/podcast-banner.png'
+				}];
+
+				this.$el.html(JST['src/js/templates/home.html']({
+					banners: banners
+				}));
 				
 				// Apply styles for home page.
 				$("body").attr("class", "home");
