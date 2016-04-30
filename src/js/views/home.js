@@ -16,6 +16,9 @@ define([
 					url: 'javascript:void(0);',
 					img: '/img/logo.png'
 				},{
+					url: '/spring-picnic',
+					img: '/img/picnic-banner.png'
+				},{
 					url: '/the-camp',
 					img: '/img/camp-banner.png'
 				},{
