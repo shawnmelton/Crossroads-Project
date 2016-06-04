@@ -19,8 +19,20 @@ define([
 					url: '/spring-picnic',
 					img: '/img/picnic-banner.png'
 				},*/{
+					url: '/summer-schedule',
+					img: '/img/summer-schedule-banner.png'
+				},{
 					url: '/the-camp',
 					img: '/img/camp-banner.png'
+				},{
+					url: '/swag',
+					img: '/img/swag-banner.png'
+				},{
+					url: '/mercy-justice',
+					img: '/img/mercy-justice-banner.png'
+				},{
+					url: '/beach-baptism',
+					img: '/img/beach-baptism-banner.png'
 				},{
 					url: '/starting-point',
 					img: '/img/starting-point.png'

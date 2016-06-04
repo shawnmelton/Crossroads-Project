@@ -41,6 +41,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'imperfect-conference': 'showImperfectConference',
 				'membership-class': 'showMembershipClass',
 				'spring-picnic': 'showSpringPicnic',
+				'mercy-justice': 'showMercyJustice',
+				'swag': 'showSwag',
+				'beach-baptism': 'showBeachBaptism',
+				'summer-schedule': 'showSummerServices',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -50,12 +54,28 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				connSecView.render('abide');
 			},
 
+			showBeachBaptism: function() {
+				connSecView.render('beachBaptism');	
+			},
+
+			showSummerServices: function() {
+				learnSecView.render('summerSchedule');
+			},
+
+			showSwag: function() {
+				connSecView.render('swag');
+			},
+
 			showJustice: function() {
 				connSecView.render('justiceSunday');
 			},
 
 			showMembershipClass: function() {
 				learnSecView.render('membershipClass');
+			},
+
+			showMercyJustice: function() {
+				connSecView.render('mercyAndJustice');
 			},
 
 			showImperfectConference: function() {
