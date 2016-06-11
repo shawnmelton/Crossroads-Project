@@ -15,16 +15,16 @@ define([
 				var banners = [{
 					url: 'javascript:void(0);',
 					img: '/img/logo.png'
-				},/*{
-					url: '/spring-picnic',
-					img: '/img/picnic-banner.png'
-				},*/{
+				},{
+					url: '/daddy-daughter-dance',
+					img: '/img/daddydaughter-banner.png'
+				},{
 					url: '/summer-schedule',
 					img: '/img/summer-schedule-banner.png'
 				},{
 					url: '/the-camp',
 					img: '/img/camp-banner.png'
-				},{
+				}/*,{
 					url: '/swag',
 					img: '/img/swag-banner.png'
 				},{
@@ -42,7 +42,7 @@ define([
 				},{
 					url: '/learn/sermons',
 					img: '/img/podcast-banner.png'
-				}];
+				}*/];
 
 				this.$el.html(JST['src/js/templates/home.html']({
 					banners: banners
