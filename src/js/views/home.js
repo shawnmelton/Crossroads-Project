@@ -16,11 +16,8 @@ define([
 					url: 'javascript:void(0);',
 					img: '/img/logo.png'
 				},{
-					url: '/daddy-daughter-dance',
-					img: '/img/daddydaughter-banner.png'
-				},{
 					url: '/summer-schedule',
-					img: '/img/summer-schedule-banner.png'
+					img: '/img/summer-schedule-banner-2.png'
 				},{
 					url: '/the-camp',
 					img: '/img/camp-banner.png'
