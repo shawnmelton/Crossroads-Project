@@ -17,11 +17,14 @@ define([
 					img: '/img/logo.png'
 				},{
 					url: '/summer-schedule',
-					img: '/img/summer-schedule-banner-2.png'
+					img: '/img/summer-schedule-banner-3.png'
 				},{
+					url: '/the-camp-continued',
+					img: '/img/thecampcontinued-banner-2.png'
+				}/*,{
 					url: '/the-camp',
 					img: '/img/camp-banner.png'
-				}/*,{
+				},{
 					url: '/swag',
 					img: '/img/swag-banner.png'
 				},{
