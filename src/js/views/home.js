@@ -20,7 +20,7 @@ define([
 					img: '/img/summer-schedule-banner-3.png'
 				},{
 					url: '/the-camp-continued',
-					img: '/img/thecampcontinued-banner-2.png'
+					img: '/img/the-camp-continued-banner-3.png'
 				}/*,{
 					url: '/the-camp',
 					img: '/img/camp-banner.png'
