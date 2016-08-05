@@ -18,10 +18,10 @@ define([
 				},{
 					url: '/summer-schedule',
 					img: '/img/summer-schedule-banner-3.png'
-				},{
+				}/*,{
 					url: '/the-camp-continued',
 					img: '/img/the-camp-continued-banner-3.png'
-				}/*,{
+				},{
 					url: '/the-camp',
 					img: '/img/camp-banner.png'
 				},{
