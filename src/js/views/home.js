@@ -15,10 +15,7 @@ define([
 				var banners = [{
 					url: 'javascript:void(0);',
 					img: '/img/logo.png'
-				},{
-					url: '/summer-schedule',
-					img: '/img/summer-schedule-banner-3.png'
-				}/*,{
+				},/*,{
 					url: '/the-camp-continued',
 					img: '/img/the-camp-continued-banner-3.png'
 				},{
@@ -36,13 +33,13 @@ define([
 				},{
 					url: '/starting-point',
 					img: '/img/starting-point.png'
-				},{
+				},*/{
 					url: '/women',
 					img: '/img/CRwomen_banner.gif'
 				},{
 					url: '/learn/sermons',
 					img: '/img/podcast-banner.png'
-				}*/];
+				}];
 
 				this.$el.html(JST['src/js/templates/home.html']({
 					banners: banners
