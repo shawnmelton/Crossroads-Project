@@ -46,6 +46,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'beach-baptism': 'showBeachBaptism',
 				'summer-schedule': 'showSummerServices',
 				'the-camp-continued': 'showCampContinued',
+				'campus': 'showCampus',
 				
 				// Default
 				"*actions": 'defaultAction'
@@ -53,6 +54,10 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showAbide: function() {
 				connSecView.render('abide');
+			},
+
+			showCampus: function() {
+				learnSecView.render('campus');
 			},
 
 			showCampContinued: function() {

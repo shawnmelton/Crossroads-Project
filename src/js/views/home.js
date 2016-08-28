@@ -34,8 +34,8 @@ define([
 					url: '/starting-point',
 					img: '/img/starting-point.png'
 				},*/{
-					url: '/women',
-					img: '/img/CRwomen_banner.gif'
+					url: '/campus',
+					img: '/img/crc-campus.png'
 				},{
 					url: '/learn/sermons',
 					img: '/img/podcast-banner.png'
