@@ -47,9 +47,14 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'summer-schedule': 'showSummerServices',
 				'the-camp-continued': 'showCampContinued',
 				'campus': 'showCampus',
+				'financial-peace': 'showFP',
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showFP: function() {
+				connSecView.render('financialPeace');
 			},
 
 			showAbide: function() {
