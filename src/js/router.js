@@ -48,9 +48,14 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'the-camp-continued': 'showCampContinued',
 				'campus': 'showCampus',
 				'financial-peace': 'showFP',
+				'entrusted': 'showEntrusted',
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showEntrusted: function() {
+				connSecView.render('entrusted');
 			},
 
 			showFP: function() {

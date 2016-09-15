@@ -34,6 +34,9 @@ define([
 					url: '/starting-point',
 					img: '/img/starting-point.png'
 				},*/{
+					url: '/entrusted',
+					img: '/img/EntrustedBanner.png'
+				},{
 					url: '/campus',
 					img: '/img/crc-campus.png'
 				},{
