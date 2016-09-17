@@ -49,9 +49,14 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'campus': 'showCampus',
 				'financial-peace': 'showFP',
 				'entrusted': 'showEntrusted',
+				'tidewater-park': 'showTidewaterPark',
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showTidewaterPark: function() {
+				connSecView.render('tidewaterPark');
 			},
 
 			showEntrusted: function() {
