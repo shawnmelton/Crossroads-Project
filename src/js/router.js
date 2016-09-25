@@ -50,9 +50,14 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'financial-peace': 'showFP',
 				'entrusted': 'showEntrusted',
 				'tidewater-park': 'showTidewaterPark',
+				'volunteer-appreciation-night': 'showVolunteerAppreciation',
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showVolunteerAppreciation: function() {
+				connSecView.render('volunteerAppreciation');
 			},
 
 			showTidewaterPark: function() {

@@ -15,25 +15,10 @@ define([
 				var banners = [{
 					url: 'javascript:void(0);',
 					img: '/img/logo.png'
-				},/*,{
-					url: '/the-camp-continued',
+				},,{
+					url: '/fall-festival',
 					img: '/img/the-camp-continued-banner-3.png'
 				},{
-					url: '/the-camp',
-					img: '/img/camp-banner.png'
-				},{
-					url: '/swag',
-					img: '/img/swag-banner.png'
-				},{
-					url: '/mercy-justice',
-					img: '/img/mercy-justice-banner.png'
-				},{
-					url: '/beach-baptism',
-					img: '/img/beach-baptism-banner.png'
-				},{
-					url: '/starting-point',
-					img: '/img/starting-point.png'
-				},*/{
 					url: '/entrusted',
 					img: '/img/EntrustedBanner.png'
 				},{

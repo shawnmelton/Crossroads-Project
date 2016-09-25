@@ -223,7 +223,6 @@ html {}
 			}
 			section.alternate > div.alternate-right {
 				margin-right: 0;
-				margin-bottom: 0;
 			}
 				section.alternate > div > img {
 					float: left;
