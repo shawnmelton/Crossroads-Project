@@ -34,10 +34,6 @@ module.exports = function(grunt) {
 			}
 		},
 		concat: {
-			scripts: {
-				src: ['src/js/libs/css3-mediaqueries.js', 'src/js/libs/html5.js'],
-				dest: 'httpdocs/js/ie-lte-9.js'
-			},
 			build: {
 				src: ['httpdocs/js/require.min.js', 'httpdocs/js/crc.min.js'],
 				dest: 'httpdocs/js/crc.min.js'

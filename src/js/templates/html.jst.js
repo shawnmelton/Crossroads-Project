@@ -299,6 +299,17 @@ __p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="C
 return __p
 };
 
+this["JST"]["src/js/templates/secondary.html"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n' +
+((__t = ( content )) == null ? '' : __t);
+
+}
+return __p
+};
+
 this["JST"]["src/js/templates/springPicnic.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;

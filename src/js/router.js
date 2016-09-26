@@ -1,6 +1,6 @@
 define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/contentLocator',
-	'views/home', 'views/find', 'views/connectSecondary', 'views/learnSecondary'], 
-	function($, _, Backbone, homeHoverContent, contentLocator, homeView, findView, connSecView, learnSecView){
+	'views/home', 'views/find', 'views/connectSecondary', 'views/learnSecondary', 'views/secondary'], 
+	function($, _, Backbone, homeHoverContent, contentLocator, homeView, findView, connSecView, learnSecView, secondaryView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
@@ -232,7 +232,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 			},
 			
 			defaultAction: function(actions){
-				this.show404();
+				secondaryView.render();
 			}
 		});
 		

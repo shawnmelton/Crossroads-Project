@@ -8,7 +8,7 @@ class JSON {
         exit;
     }
 
-    public static function format($string) {
+    public static function format($response) {
         header('Content-Type: application/json');
 
         $object = new stdClass();
@@ -16,7 +16,7 @@ class JSON {
         $object->status->success = self::$success;
         $object->status->message = self::$success ? 'OK' : 'Bad Request';
 
-        $object->response = $string;
+        $object->response = $response;
 
         return json_encode($object);
     }

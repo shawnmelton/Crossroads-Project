@@ -209,11 +209,13 @@ html {}
 				margin: 5px 0;
 			}
 			
-			body > div > section {
+			body > div > section,
+            #main-content > div > section {
 				margin: 1%;
 				padding: 3% 5%;
 			}
-				body > div > section.alternate { background: #e4dfdd; }
+				body > div > section.alternate,
+                #main-content > div > section.alternate { background: #e4dfdd; }
 
 			/* Employee contact information. */
 			section.alternate > div {

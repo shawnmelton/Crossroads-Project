@@ -14,7 +14,7 @@ putenv('TZ=US/Eastern');
 
 // Class autoloader
 function __autoload($className) {
-    foreach (array('tools') as $folder) {
+    foreach (array('tools', 'models') as $folder) {
         $class = dirname(__FILE__) .'/'. $folder .'/'. $className .'.php';
         if (file_exists($class) ) {
             require_once($class);
