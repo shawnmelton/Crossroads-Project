@@ -51,9 +51,24 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'entrusted': 'showEntrusted',
 				'tidewater-park': 'showTidewaterPark',
 				'volunteer-appreciation-night': 'showVolunteerAppreciation',
+				'live': 'showLive',
 				
 				// Default
 				"*actions": 'defaultAction'
+			},
+
+			showLive: function() {
+				connSecView.render('live');
+
+				var width = (window.innerWidth * 0.8),
+					height = (width * 0.75);
+
+				if (width > 1000) {
+					width = 1000;
+					height = 750;
+				}
+
+				document.getElementById('live').innerHTML = '<iframe src="//player.vimeo.com/hubnut/album/4186555?color=44bbff&amp;background=000000&amp;slideshow=0&amp;video_title=1&amp;video_byline=0" width="'+ width +'" height="'+ height +'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 			},
 
 			showVolunteerAppreciation: function() {

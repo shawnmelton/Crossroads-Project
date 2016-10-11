@@ -17,13 +17,10 @@ define([
 					img: '/img/logo.png'
 				},,{
 					url: '/fall-festival',
-					img: '/img/the-camp-continued-banner-3.png'
+					img: '/img/fall-festival-banner.png'
 				},{
 					url: '/entrusted',
 					img: '/img/EntrustedBanner.png'
-				},{
-					url: '/campus',
-					img: '/img/crc-campus.png'
 				},{
 					url: '/learn/sermons',
 					img: '/img/podcast-banner.png'
