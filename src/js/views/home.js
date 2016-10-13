@@ -15,9 +15,12 @@ define([
 				var banners = [{
 					url: 'javascript:void(0);',
 					img: '/img/logo.png'
-				},,{
+				},{
 					url: '/fall-festival',
 					img: '/img/fall-festival-banner.png'
+				},{
+					url: 'http://crclivingstones.com',
+					img: '/img/living-stones-banner.png'
 				},{
 					url: '/entrusted',
 					img: '/img/EntrustedBanner.png'

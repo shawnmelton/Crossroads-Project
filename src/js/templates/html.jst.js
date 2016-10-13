@@ -179,7 +179,11 @@ __p += '<img src="/img/logo.png" alt="CrossRoads Church Norfolk" id="home-logo">
  _.each(banners, function(banner) { ;
 __p += '\n\t\t<a href="' +
 ((__t = ( banner.url )) == null ? '' : __t) +
-'"><img src="' +
+'" ';
+ if (banner.url.indexOf('http') !== -1) { ;
+__p += 'target="_blank"';
+ } ;
+__p += '><img src="' +
 ((__t = ( banner.img )) == null ? '' : __t) +
 '" alt="Homepage Banner"></a>\n\t';
  }) ;
