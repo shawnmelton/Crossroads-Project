@@ -317,8 +317,11 @@ this["JST"]["src/js/templates/secondary.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n' +
-((__t = ( content )) == null ? '' : __t);
+__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n<div>\n    <section>\n        <h1>' +
+((__t = ( title )) == null ? '' : __t) +
+'</h1>\n        ' +
+((__t = ( content )) == null ? '' : __t) +
+'\n    </section>\n</div>';
 
 }
 return __p

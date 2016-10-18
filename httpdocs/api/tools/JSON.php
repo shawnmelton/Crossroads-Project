@@ -9,8 +9,6 @@ class JSON {
     }
 
     public static function format($response) {
-        header('Content-Type: application/json');
-
         $object = new stdClass();
         $object->status = new stdClass();
         $object->status->success = self::$success;

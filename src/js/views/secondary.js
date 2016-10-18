@@ -5,7 +5,8 @@ define(['jquery', 'backbone', 'templates/html.jst'], function($, Backbone, htmlJ
                     if (typeof r === 'object' && r.response !== null) {
                         document.title = 'CrossRoads Church Norfolk :: '+ r.response.title;
                         document.getElementById('main-content').innerHTML = JST['src/js/templates/secondary.html']({
-                            content: r.response.content
+                            content: r.response.content,
+                            title: r.response.title
                         });
                     } else {
                         document.getElementById('main-content').innerHTML = JST['src/js/templates/404.html']();

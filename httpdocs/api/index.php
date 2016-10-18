@@ -10,5 +10,6 @@ if (isset($_GET['url']) && preg_match('/^(?:[^\/]*(?:\/(?:\/[^\/]*\/?)?)?([^?]+)
     JSON::error();
 }
 
+header('Content-Type: application/json');
 echo $request->getResponse();
 exit;
