@@ -24,7 +24,6 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'family-on-mission': 'showFamilyOnMission',
 				'daddy-daughter-dance': 'showDance',
 				'i-am-crossroads': 'showIAm',
-				'3dm-conference': 'show3dmConference',
 				'military-wives': 'showMilitaryWives',
 				'i-still-do': 'showIStillDo',
 				'administrative-pastor': 'showExecPastor',
@@ -34,10 +33,7 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'childrens-director': 'showKidsDirector',
 				'the-camp': 'showCamp',
 				'starting-point': 'showStartingPoint',
-				'women': 'showWomen',
-				'fall-festival': 'showFallFestival',
 				'justice-sunday': 'showJustice',
-				'kids': 'showKids',
 				'imperfect-conference': 'showImperfectConference',
 				'membership-class': 'showMembershipClass',
 				'spring-picnic': 'showSpringPicnic',
@@ -49,7 +45,6 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				'campus': 'showCampus',
 				'financial-peace': 'showFP',
 				'entrusted': 'showEntrusted',
-				'tidewater-park': 'showTidewaterPark',
 				'volunteer-appreciation-night': 'showVolunteerAppreciation',
 				'live': 'showLive',
 				
@@ -73,10 +68,6 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 
 			showVolunteerAppreciation: function() {
 				connSecView.render('volunteerAppreciation');
-			},
-
-			showTidewaterPark: function() {
-				connSecView.render('tidewaterPark');
 			},
 
 			showEntrusted: function() {
@@ -127,20 +118,8 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				connSecView.render('imperfectConference');
 			},
 
-			showKids: function() {
-				connSecView.render('kids');
-			},
-
-			showFallFestival: function() {
-				connSecView.render('fallFestival');
-			},
-
 			showAdminAsst: function() {
 				learnSecView.render('adminAssistant');
-			},
-
-			showWomen: function() {
-				connSecView.render('women');
 			},
 
 			showExecPastor: function() {
@@ -166,11 +145,6 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 					homeHoverContent.setHandlers();
 				}
 			},
-
-			show3dmConference: function() {
-				learnSecView.render('threeDMConf');
-			},
-
 			showDance: function() {
 				connSecView.render('daddydance');
 			},
@@ -182,18 +156,6 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 			showIStillDo: function() {
 				connSecView.render('iStillDo');
 			},
-
-			/*showIAmCRCVideo: function() {
-				var width = Math.floor($(window).width() * 0.88),
-					height = Math.floor((width * 9) / 16);
-
-				if(width > 1000) {
-					width = 1000;
-					height = 562;
-				} 
-
-				$('#iamcrc').append('<video width="'+ width +'" height="'+ height +'" controls="controls"><source src="/video/i-am-crossroads.mp4" type="video/mp4"></video>');
-			},*/
 
 			showKidsDirector: function() {
 				learnSecView.render('childrensDirector');

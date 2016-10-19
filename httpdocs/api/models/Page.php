@@ -2,18 +2,37 @@
 class Page {
     public $title;
     public $content;
+    public $children;
+    public $excerpt;
+    public $url;
 
-    private function cleanUp() {
-        $this->content = str_replace('http://www.crcnorfolk.com/content', 'http://www.crcnorfolk.com', $this->content);
+    protected function cleanUp() {
+        $wpUrl = 'http://crcnorfolk.com/content';
+        $siteUrl = 'http://crcnorfolk.com';
 
-        if (strpos($this->content, 'section') === false) {
-            $this->content = '<div><section>'. $this->content .'</section></div>';
+        $this->content = str_replace($wpUrl, $siteUrl, $this->content);
+        $this->url = str_replace($wpUrl, $siteUrl, $this->url);
+        $this->excerpt = str_replace($wpUrl, $siteUrl, $this->excerpt);
+
+        foreach($this->children as $index => $child) {
+            $childPage = new ChildPage();
+            $childPage->map($child);
+
+            $childPage->excerpt = str_replace('&#8220;'. $this->title .'&#8221;', '&#8220;'. $childPage->title .'&#8221;', $childPage->excerpt);
+            $childPage->excerpt = str_replace($this->url, $childPage->url, $childPage->excerpt);
+            $childPage->excerpt = str_replace('&hellip;', '&hellip;<br><br>', $childPage->excerpt);
+
+            $this->children[$index] = $childPage;
         }
     }
 
     public function map($jsonObject) {
         $this->title = $jsonObject->title;
         $this->content = $jsonObject->content;
+
+        $this->children = isset($jsonObject->children) ? $jsonObject->children : [];
+        $this->url = isset($jsonObject->url) ? $jsonObject->url : '';
+        $this->excerpt = isset($jsonObject->excerpt) ? $jsonObject->excerpt : '';
         $this->cleanUp();
     }
 }

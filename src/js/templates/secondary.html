@@ -1,7 +1,22 @@
 <a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>
-<div>
-    <section>
-        <h1><%= title %></h1>
+<div style="padding-bottom: 50px;">
+    <section <% if (content === '') { %>style="padding-bottom: 0; margin-bottom: 0;"<% } %>>
+        <div class="breadcrumbs">
+            <a href="/">CrossRoads Church</a> 
+            &nbsp;&raquo;&nbsp; 
+            <% if (parent !== null) { %>
+                <a href="<%= parent.url %>"><%= parent.title %></a> 
+                &nbsp;&raquo;&nbsp; 
+            <% } %>
+            <%= title %>
+        </div>
+        <h1 <% if (content === '') { %>style="margin-bottom: 0;"<% } %>><%= title %></h1>
         <%= content %>
     </section>
+    <% _.each(children, function(child, index) { %>
+    <section <% if (index % 2 === 1) { %>class="alternate"<% } %>>
+        <h2><%= child.title %></h2>
+        <%= child.excerpt %>
+    </section>
+    <% }); %> 
 </div>

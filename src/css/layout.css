@@ -25,6 +25,7 @@ html {}
 
 	section p > strong { font-family: arial; }
 
+    h1 { font-size: 170%; }
 
 	.importantUpdate { padding: 10px 0; }
 		.importantUpdate > p {
@@ -270,9 +271,7 @@ html {}
 			height: 100px;
 		}
 		body.learn > header { border-top: 2px solid #7ab6ca; }
-			body.learn > div a { color: #6597a8; }
 		body.connect > header { border-top: 2px solid #729616; }
-			body.connect > div a { color: #729616; }
 		body.find > header { border-top: 2px solid #e89c17; }
 			body.secondary #banner {
 				height: 100px;
@@ -318,7 +317,6 @@ html {}
 			
 		body.secondary > div { padding-top: 60px; }
 		body.secondary > div.importantUpdate { padding-top: 80px; }
-			body.secondary > div img { border: 2px solid #48413e; }
 			body.secondary > div p { line-height: 1.9; }
 			body.secondary > div p.before-small { margin-bottom: 2px; }
 			body.secondary > div p.small { 
@@ -558,7 +556,7 @@ html {}
 	body > div a.studyGuide { background-image: url(../img/study-guide.png); }
 	body > div a.sermonNotes { background-image: url(../img/cross.png); }
 	body > div a.video { background-image: url(../img/video.png); }
-	p.clearfix:after {
+	.clearfix:after {
 		display: table;
 		content: " ";
 		clear: both;		
@@ -621,3 +619,5 @@ html {}
         margin: 0 auto;
         padding: 0 0 50px;
     }
+
+.breadcrumbs { color: #555;  }

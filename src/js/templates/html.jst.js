@@ -130,26 +130,6 @@ __p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="C
 return __p
 };
 
-this["JST"]["src/js/templates/fallFestival.html"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __e = _.escape;
-with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="CrossRoads Church Norfolk"></a>\n<section>\n    <img src="/img/fall-festival-2016.png" alt="Fall Festival" style="width:100%; max-width: 240px; border: 0;">\n    <br><br>\n    <h2>Fall Festival</h2>\n    <p>\n        Crossroads Church Annual Fall Festival! <strong>Sunday, October 30th from 5-7pm</strong>! Fun for all ages!! Chili Cook Off, Cake Walk, Bounce House, Prizes, Games, Yummy Treats, Crafts, Dunk Tank, AND MORE!\n    </p>\n    <p>Costumes are welcome and encouraged! Please, nothing scary or inappropriate!</p>\n    <p>\n        If you are interested in registering to be a volunteer, bring chili to the chili cook, or bring a dessert for the cake walk please use this link: <a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=109" target="_blank">https://crcnorfolk.ccbchurch.com/form_response.php?id=109</a>\n    </p>\n</section>';
-
-}
-return __p
-};
-
-this["JST"]["src/js/templates/familyOnMission.html"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __e = _.escape;
-with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="CrossRoads Church Norfolk"></a>\n<section>\n    <img src="/img/fom-poster.png" alt="Family on Mission Conference" style="width: 100%; max-width: 464px; border: 0;">\n    <br><br>\n    <h2>Sign Up Now!</h2>\n    <p>Please use our <a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=57" target="_blank">online form</a> to register.  For more information, please contact Clark Taylor at <a href="mailto:clark@crossroadsnorfolk.com">clark@crossroadsnorfolk.com</a>.</p>\n</section>';
-
-}
-return __p
-};
-
 this["JST"]["src/js/templates/financialPeace.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
@@ -187,7 +167,7 @@ __p += '><img src="' +
 ((__t = ( banner.img )) == null ? '' : __t) +
 '" alt="Homepage Banner"></a>\n\t';
  }) ;
-__p += '\n</div>\n<h2 id="subheading">\n\tA vibrant church in Norfolk Virginia, CrossRoads is dedicated to furthering the Gospel of \n\tJesus Christ through a commitment to the <a href="/learn/mission">campus, community and world</a>. \n\tWe are comprised of people who want to see the city transformed by the love of God.  We believe that every journey has CrossRoads and that God has a plan for every life. Our focus isn\'t building a large organization, but seeing people become fully devoted followers of Christ.\n</h2>\n<!--<div class="jobPosting" id="job-posting-2">\n\t<img src="/img/missions-offering.png" alt="Japan Missions Offering" style="width: 100%; margin: 0 auto; max-width: 750px; border: 0; margin-bottom: 15px;">\n\t<h3>Japan Missions Trip</h3>\n\t<p style="font-size: 90%;">CrossRoads is partnering with Peninsula Community Church to send a team to Japan to help local missionaries (Rob and Yoko Taylor) host an English Camp and Vacation Bible School for elementary school students. The dates of the trip are July 26 to August 8, 2016.  There will be an opportunity to give to the Japan Missions offering during both  services on Sunday June 26th.  Please prayerfully consider making a financial contribution.</p>\n\t<a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=84" target="_blank"><span>&#xf0ac;</span>&nbsp; Support our World Mission\'s Trip to Japan &gt;</a>\n</div>-->\n<!--<div class="jobPosting" id="job-posting-3">\n\t<h3>Summer Intern</h3>\n\tCrossRoads Church is currently looking to hire a Summer Intern who has interest in full time ministry and would like to gain "hands on" experience in our church.<br><br> \n\t<a href="/docs/CRCInternDescription.pdf" target="_blank"><span>&#xf019;</span>&nbsp; Download the job description &gt;</a>\n</div>-->\n<div id="living-stones">\n\t<a href="http://crclivingstones.com" target="_blank"><img src="/img/living-stones-banner.png" style="border: 0; width: 100%; max-width: 800px;"></a>\n</div>\n<div class="subcontent">\n\t<div class="blue">\n\t\t<div class="bar"></div>\n\t\t<h3>Learn</h3>\n\t\t<p>\n\t\t\tAre you looking for a different church experience?  CrossRoads is an inviting, yet \n\t\t\tchallenging church community that is unlike any other.  Find out what makes us different.<br><br>\n\t\t\t<a href="/learn">Learn <small>&gt;</small></a>\n\t\t</p>\n\t</div>\n\t<div class="green">\n\t\t<div class="bar"></div>\n\t\t<h3>Connect</h3>\n\t\t<p>\n\t\t\tHaving a community of believers that you can journey through life with\n\t\t\tis extremely important.  Find out what it means to be a part of the CrossRoads community!<br><br>\n\t\t\t<a href="/connect">Connect <small>&gt;</small></a>\n\t\t</p>\n\t</div>\n\t<div class="orange">\n\t\t<div class="bar"></div>\n\t\t<h3>Find</h3>\n\t\t<p>\n\t\t\tCrossRoads is located in the Larchmont area of Norfolk, VA.  If you are interested\n\t\t\tin coming to any of our services or events, than you can use the link below for driving directions.<br><br>\n\t\t\t<a href="/find">Find <small>&gt;</small></a>\n\t\t</p>\n\t</div>\n</div>\n<div id="quarter-content">\n\t<a href="/women" style="margin-top: 25px;">\n\t\t<img src="/img/CRwomen_logo_web_sm.gif" alt="Women\'s Ministry">\n\t\t<!--<span style="color: #c60;">Women\'s Ministry</span>-->\n\t</a>\n\t<!--<a href="/moms">\n\t\t<img src="/img/moms-200.png" alt="Moms Group">\n\t\t<span style="color: #8d4746;">Moms Group</span>\n\t</a>-->\n\t<a href="https://crcnorfolk.ccbchurch.com/login.php" target="_blank" class="split">\n\t\t<img src="/img/ccb-200.png" alt="Church Community Builder > Log In"><br>\n\t\t<span style="color: #2d2826;">CCB Log In</span>\n\t</a>\n\t<a href="https://itunes.apple.com/us/podcast/crossroads-church/id374524089?mt=2" class="split-next" target="_blank">\n\t\t<img src="/img/sermon-200.png" alt="Listen to Sermons">\n\t\t<span style="color: #524335;">Sermons Online</span>\n\t</a>\n</div>\n';
+__p += '\n</div>\n<h2 id="subheading">\n\tA vibrant church in Norfolk Virginia, CrossRoads is dedicated to furthering the Gospel of \n\tJesus Christ through a commitment to the <a href="/learn/mission">campus, community and world</a>. \n\tWe are comprised of people who want to see the city transformed by the love of God.  We believe that every journey has CrossRoads and that God has a plan for every life. Our focus isn\'t building a large organization, but seeing people become fully devoted followers of Christ.\n</h2>\n<!--<div class="jobPosting" id="job-posting-2">\n\t<img src="/img/missions-offering.png" alt="Japan Missions Offering" style="width: 100%; margin: 0 auto; max-width: 750px; border: 0; margin-bottom: 15px;">\n\t<h3>Japan Missions Trip</h3>\n\t<p style="font-size: 90%;">CrossRoads is partnering with Peninsula Community Church to send a team to Japan to help local missionaries (Rob and Yoko Taylor) host an English Camp and Vacation Bible School for elementary school students. The dates of the trip are July 26 to August 8, 2016.  There will be an opportunity to give to the Japan Missions offering during both  services on Sunday June 26th.  Please prayerfully consider making a financial contribution.</p>\n\t<a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=84" target="_blank"><span>&#xf0ac;</span>&nbsp; Support our World Mission\'s Trip to Japan &gt;</a>\n</div>-->\n<!--<div class="jobPosting" id="job-posting-3">\n\t<h3>Summer Intern</h3>\n\tCrossRoads Church is currently looking to hire a Summer Intern who has interest in full time ministry and would like to gain "hands on" experience in our church.<br><br> \n\t<a href="/docs/CRCInternDescription.pdf" target="_blank"><span>&#xf019;</span>&nbsp; Download the job description &gt;</a>\n</div>-->\n<div id="living-stones">\n\t<a href="http://crclivingstones.com" target="_blank"><img src="/img/living-stones-banner.png" style="border: 0; width: 100%; max-width: 800px;"></a>\n</div>\n<div class="subcontent">\n\t<div class="blue">\n\t\t<div class="bar"></div>\n\t\t<h3>Learn</h3>\n\t\t<p>\n\t\t\tAre you looking for a different church experience?  CrossRoads is an inviting, yet \n\t\t\tchallenging church community that is unlike any other.  Find out what makes us different.<br><br>\n\t\t\t<a href="/learn">Learn <small>&gt;</small></a>\n\t\t</p>\n\t</div>\n\t<div class="green">\n\t\t<div class="bar"></div>\n\t\t<h3>Connect</h3>\n\t\t<p>\n\t\t\tHaving a community of believers that you can journey through life with\n\t\t\tis extremely important.  Find out what it means to be a part of the CrossRoads community!<br><br>\n\t\t\t<a href="/connect">Connect <small>&gt;</small></a>\n\t\t</p>\n\t</div>\n\t<div class="orange">\n\t\t<div class="bar"></div>\n\t\t<h3>Find</h3>\n\t\t<p>\n\t\t\tCrossRoads is located in the Larchmont area of Norfolk, VA.  If you are interested\n\t\t\tin coming to any of our services or events, than you can use the link below for driving directions.<br><br>\n\t\t\t<a href="/find">Find <small>&gt;</small></a>\n\t\t</p>\n\t</div>\n</div>\n<div id="quarter-content">\n\t<a href="/ministries/womens-ministry/" style="margin-top: 25px;">\n\t\t<img src="/img/CRwomen_logo_web_sm.gif" alt="Women\'s Ministry">\n\t\t<!--<span style="color: #c60;">Women\'s Ministry</span>-->\n\t</a>\n\t<!--<a href="/moms">\n\t\t<img src="/img/moms-200.png" alt="Moms Group">\n\t\t<span style="color: #8d4746;">Moms Group</span>\n\t</a>-->\n\t<a href="https://crcnorfolk.ccbchurch.com/login.php" target="_blank" class="split">\n\t\t<img src="/img/ccb-200.png" alt="Church Community Builder > Log In"><br>\n\t\t<span style="color: #2d2826;">CCB Log In</span>\n\t</a>\n\t<a href="https://itunes.apple.com/us/podcast/crossroads-church/id374524089?mt=2" class="split-next" target="_blank">\n\t\t<img src="/img/sermon-200.png" alt="Listen to Sermons">\n\t\t<span style="color: #524335;">Sermons Online</span>\n\t</a>\n</div>\n';
 
 }
 return __p
@@ -273,6 +253,16 @@ __p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="
 return __p
 };
 
+this["JST"]["src/js/templates/loading.html"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n<div>\n    <section style="min-height: 100px; padding: 100px 0; text-align: center;">\n        <svg width=\'70px\' height=\'70px\' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-reload">\n            <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>\n            <g>\n                <path d="M50 15A35 35 0 1 0 74.787 25.213" fill="none" stroke="#777777" stroke-width="12px"></path>\n                <path d="M50 0L50 30L66 15L50 0" fill="#777777"></path>\n                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1s" repeatCount="indefinite"></animateTransform>\n            </g>\n        </svg>\n    </section>\n</div>';
+
+}
+return __p
+};
+
 this["JST"]["src/js/templates/membershipClass.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
@@ -315,13 +305,44 @@ return __p
 
 this["JST"]["src/js/templates/secondary.html"] = function(obj) {
 obj || (obj = {});
-var __t, __p = '', __e = _.escape;
+var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
+function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n<div>\n    <section>\n        <h1>' +
+__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n<div style="padding-bottom: 50px;">\n    <section ';
+ if (content === '') { ;
+__p += 'style="padding-bottom: 0; margin-bottom: 0;"';
+ } ;
+__p += '>\n        <div class="breadcrumbs">\n            <a href="/">CrossRoads Church</a> \n            &nbsp;&raquo;&nbsp; \n            ';
+ if (parent !== null) { ;
+__p += '\n                <a href="' +
+((__t = ( parent.url )) == null ? '' : __t) +
+'">' +
+((__t = ( parent.title )) == null ? '' : __t) +
+'</a> \n                &nbsp;&raquo;&nbsp; \n            ';
+ } ;
+__p += '\n            ' +
+((__t = ( title )) == null ? '' : __t) +
+'\n        </div>\n        <h1 ';
+ if (content === '') { ;
+__p += 'style="margin-bottom: 0;"';
+ } ;
+__p += '>' +
 ((__t = ( title )) == null ? '' : __t) +
 '</h1>\n        ' +
 ((__t = ( content )) == null ? '' : __t) +
-'\n    </section>\n</div>';
+'\n    </section>\n    ';
+ _.each(children, function(child, index) { ;
+__p += '\n    <section ';
+ if (index % 2 === 1) { ;
+__p += 'class="alternate"';
+ } ;
+__p += '>\n        <h2>' +
+((__t = ( child.title )) == null ? '' : __t) +
+'</h2>\n        ' +
+((__t = ( child.excerpt )) == null ? '' : __t) +
+'\n    </section>\n    ';
+ }); ;
+__p += ' \n</div>';
 
 }
 return __p
@@ -377,36 +398,6 @@ __p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="C
 return __p
 };
 
-this["JST"]["src/js/templates/threeDMConf.html"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __e = _.escape;
-with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-blue-small.png" alt="CrossRoads Church Norfolk"></a>\n<section>\n    <h2>Discipleship &amp; Mission</h2>\n    <p>\n        If you interested in figuring out what intentional discipleship and missions looks like for your context (church, parachurch ministry, etc.), then please contact us about joining a learning community in partnership with 3DM.  Below is more information about the learning community.\n    </p>\n    <p>\n        The two year Learning Community track entails a carefully orchestrated process which progresses from discipleship to mission. A learning community is a series of 4-day immersion experiences that incorporates main stage teaching with tactical training, expert coaching, and a chance to experience proven vehicles for discipleship and mission.At the conclusion of each immersion experience, you will leave with a detailed six-month plan to accomplish the things you believe God has called your community to do. Furthermore, the two-year track includes weekly coaching calls for senior leaders, as well as access to our content. You will truly have everything we know at your disposal.\n    </p>\n    <h4>The trajectory of the Learning Community track:</h4>\n    <ul>\n        <li>Immersion 1: Building a Discipling Culture</li>\n        <li>Immersion 2: Multiplying Missional Leaders</li>\n        <li>Immersion 3: Launching Missional Communities</li>\n        <li>Immersion 4: Leading Kingdom Movements</li>\n    </ul>\n    <p>In addition to these immersion experiences, content and coaching calls, the senior leader of your team will be invited to the annual Senior Leader and Spouse’s Retreat. This is always one of the highlights of our year.</p>\n    <p>&nbsp;</p>\n    <h4>The two-year Learning Community track consists of:</h4>\n    <ul>\n        <li>Four (4) four-day immersions that occur every six months. At each immersion, your team creates (through consultation and coaching) a six-month plan to implement in your own community.</li>\n        <li>Weekly coaching calls for the team leader between immersion experiences, with additional coaching available for an additional cost.</li>\n        <li>Two (2) annual senior leader and spouse’s retreats.</li>\n        <li>Access to all of our experience and resources.</li>\n        <li>Continued access and participation once the process concludes through Communities of Practice and other interactions.</li>\n    </ul>\n    <p>&nbsp;</p>\n    <h4>Cost of the two-year Learning Community track:</h4>\n    <p>The cost of the Learning Community is based on the size of the team you choose to bring to each of the 4-day immersion experiences. The following options also reflect the number of weekly coaching huddle places available to the team.</p>\n    <table class="learningCommTable">\n        <tr>\n            <td>\n                Team of up to 3 people<br>\n                1 in a Weekly Coaching Huddle<br>\n                <strong>$330 per month ($3,960/year)</strong>\n            </td>\n            <td>\n                Team of up to 5 people<br>\n                2 in a Weekly Coaching Huddle<br>\n                <strong>$550 per month ($6,600/year)</strong>\n            </td>\n            <td class="noBorder">\n                Team of up to 7 people<br>\n                3 in a Weekly Coaching Huddle<br>\n                <strong>$770 per month ($9,240/year)</strong>\n            </td>\n        </tr>\n    </table>\n    <p>Payment can be made in either 24 monthly payments using our auto payment method – or – 2 annual payments due in months 1 and 13 of the 24 month process. (A discount equal to one month’s payment is offered for annual payments)</p>\n    <p>Each church is responsible for their own travel, accommodation and evening meal costs. Wherever possible, 3DM looks to secure preferential rates with local hotels for participants (this information is always published on your communities event registration page if it has been possible to secure). 3DM will cover the costs of lunch, beverages, materials, etc.</p>\n    \n</section>';
-
-}
-return __p
-};
-
-this["JST"]["src/js/templates/threeDMTaster.html"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __e = _.escape;
-with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-blue-small.png" alt="CrossRoads Church Norfolk"></a>\n<section>\n    <h2>Discipleship &amp; Mission</h2>\n    <p>Explore the dynamics of making disciples of Jesus who can join God in his mission.</p>\n    <p>Discover the principles of going from having a ministry to leading a movement: reproducing disciples instead of just recruiting more volunteers, multiplying communities instead of just adding more people.</p>\n    <p>A 3DM Discipleship + Mission workshop is a chance to taste and experience:</p>\n    <ul>\n        <li>Teaching that will help frame discipleship and mission in a new light</li>\n        <li>Training with your team to help you apply principles contextually</li>\n        <li>Effective vehicles for discipleship and mission, such as Huddles and Missional Communities</li>\n        <li>What it\'s like to be part of a 3DM Learning Community (two-year journey of culture change)</li>\n    </ul>\n    <p>&nbsp;</p>\n    <h4>Cost</h4>\n    <p>The cost of the event is $39 per person. This covers lunch, workshop materials, speaker fees and content of the workshop. Attendees must pick up the cost of their accommodation and transportation.</p>\n    <p>&nbsp;</p>\n    <h4>Registration</h4>\n    <p><a href="https://www.eventbrite.com/e/1-day-discipleship-mission-taster-norfolk-virginia-tickets-14975872237" target="_blank" style="text-shadow: 0 0 1px #aaa;"><strong>Click here</strong></a> to register for this conference.</p>\n    <p>&nbsp;</p>\n    <h4>Anticipated Schedule <small>We do our best to provide and follow an accurate schedule, but it is subject to change.</small></h4>\n    <table>\n        <tr>\n            <td>9:00am</td>\n            <td>Welcome &amp; Worship</td>\n        </tr>\n        <tr>\n            <td>9:30am</td>\n            <td>Teaching</td>\n        </tr>\n        <tr>\n            <td>10:15am</td>\n            <td>Q &amp; A</td>\n        </tr>\n        <tr>\n            <td>10:45am &nbsp; </td>\n            <td>Coffee Break</td>\n        </tr>\n        <tr>\n            <td>11:00am</td>\n            <td>Huddle</td>\n        </tr>\n        <tr>\n            <td>12:15pm</td>\n            <td>Lunch</td>\n        </tr>\n        <tr>\n            <td>1:30pm</td>\n            <td>Social Space</td>\n        </tr>\n        <tr>\n            <td>2:15pm</td>\n            <td>Team Processing Time</td>\n        </tr>\n        <tr>\n            <td>3:00pm</td>\n            <td>Break</td>\n        </tr>\n        <tr>\n            <td>4:00pm</td>\n            <td>Final Thoughts</td>\n        </tr>\n        <tr>\n            <td>4:30pm</td>\n            <td>Q &amp; A</td>\n        </tr>\n        <tr>\n            <td>5:00pm</td>\n            <td>Dismissal</td>\n        </tr>\n    </table>\n    <p><a href="https://www.eventbrite.com/e/1-day-discipleship-mission-taster-norfolk-virginia-tickets-14975872237" target="_blank" style="font-size: 120%; text-shadow: 0 0 1px #aaa;"><strong>Register for this Conference!</strong></a></p>\n</section>';
-
-}
-return __p
-};
-
-this["JST"]["src/js/templates/tidewaterPark.html"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __e = _.escape;
-with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="CrossRoads Church Norfolk"></a>\n<section>\n    <img src="/img/tidewaterpark.png" alt="Tidewater Park" style="width: 100%; max-width: 150px; border: 0;">\n    <br><br>\n    <p>\n        Crossroads Church partners with Tidewater Park Elementary and The Boys and Girls Club during the school year. We offer tutoring for the kids working on homework. This is also a place to build relationships and offer mentorship.\n    </p>\n    <p>&nbsp;</p>\n    <h3>Register Now</h3>\n    <p>Click here to register:  <a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=117" target="_blank">https://crcnorfolk.ccbchurch.com/form_response.php?id=117</a></p>\n    <p>&nbsp;</p>\n    <p>For additional questions or information please contact Jenny Goodwin (<a href="mailto:nicole.kristol@gmail.com">nicole.kristol@gmail.com</a>).</p>\n</section>\n';
-
-}
-return __p
-};
-
 this["JST"]["src/js/templates/upsideDownChristmas.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
@@ -422,16 +413,6 @@ obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
 __p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="CrossRoads Church Norfolk"></a>\n<section>\n    <h2>Volunteer Appreciation</h2>\n    <p>\n        Mark your calendar: <strong>Friday, Oct. 14th, at 7 PM</strong>. CrossRoads is hosting a night of fellowship, awards, and games for all volunteers! Dessert and coffee provided. Childcare is available upon advance registration. \n        <br><br>\n        Click this link to register:  <a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=120" target="_blank">https://crcnorfolk.ccbchurch.com/form_response.php?id=120</a>\n    </p>\n</section>';
-
-}
-return __p
-};
-
-this["JST"]["src/js/templates/women.html"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __e = _.escape;
-with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-green-small.png" alt="CrossRoads Church Norfolk"></a>\n<section>\n\t<img src="/img/crc-women.PNG" alt="CrossRoads Women" style="border: 0; width: 100%; max-width: 400px;">\n\t<p>&nbsp;</p>\n\t<h3>Women\'s Fall Activities:</h3>\n\t\n\t<p>&nbsp;</p>\n\t<h3>Monday Bible Study</h3>\n\t<p>\n\t\tMondays from 6:30-8 pm, starting 9/12\n\t\tWe’ll be studying the book of James using a study by Jen Wilkin. Contact Kristen Boden (<a href="mailto:kristin.boden@gmail.com">kristin.boden@gmail.com</a>) for location details and more information.\n\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>Wednesday Bible Study</h3>\n\t<p>\n\t\t1st &amp; 3rd Wednesdays from 9:30-11:30am, starting 9/21\n\t\tThis semester we will be working our way through 2 Timothy using Beth Moore’s newest study, Entrusted. Childcare is provided with registration*. Cost is $30. Contact Christianne Page (<a href="mailto:ccpage@gmail.com">ccpage@gmail.com</a>) for more information.\n\t\tClick on this link to register: <a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=107" target="_blank">https://crcnorfolk.ccbchurch.com/form_response.php?id=107</a>\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>Moms Group</h3>\n\t<p>\n\t\t2nd &amp; 4th Wednesdays from 9:30-11:30 am, starting 9/14\n\t\tJoin us for coffee, fun, and friendship with other women who understand the joys and challenges of being “mommy.” This fall we are learning the powerful strategy of Loving Our Kids on Purpose. Childcare is provided with registration*. Cost is $30. Contact Ashley (<a href="mailto:ashley@crossroadsnorfolk.com">ashley@crossroadsnorfolk.com</a>) with questions. \n\t\tClick on this link to register: <a href="https://crcnorfolk.ccbchurch.com/form_response.php?id=108" target="_blank">https://crcnorfolk.ccbchurch.com/form_response.php?id=108</a>\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>Living in Holland</h3>\n\t<p>\n\t\t4th Mondays from 7-8:45 pm, starting 9/26\n\t\tMoms of children with special needs are welcome to come find community and support. Casual atmosphere with discussion time stemming from the book Loving Samantha by Karen L. Jackson. RSVP childcare requests to Katie Moormann (<a href="mailto:kmoormann@gmail.com">kmoormann@gmail.com</a>)\n\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>Joy Through the Journey</h3>\n\t<p>\n\t\tThis group is for women who are currently struggling with primary or secondary infertility. Our hope is to provide a safe place to share our struggles but also find joy through the journey together. This semester we’ll be reading Longing for a Child by Kathe Wunnenburg. Contact Brie Weaver (<a href="mailto:bmweaver84@yahoo.com">bmweaver84@yahoo.com</a>) for more information.\n\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>Military Wives Connection</h3>\n\t<p>\n\t\t2nd Wednesdays at 7:30 pm @ McCrillis Home\n\t\tCome join us for fellowship as we share the common vocation of being military wives. There will be times for bible study, socials, and some guest speakers. Contact Tori McCrillis (757-373-2585, <a href="mailto:mccrillis5@gmail.com">mccrillis5@gmail.com</a>) or Jennifer Beattie (<a href="mailto:jenandjonbeattie@yahoo.com">jenandjonbeattie@yahoo.com</a>).\n\t\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>HOPE</h3>\n\t<p>\t\n\t\tHOPE Ministry is a support group for wives of spouses who have - in the past or present - struggled with a sexual addiction. We provide\n\t\ta safe place for women to openly discuss their families’ struggles through addiction and to find hope and healing. Contact Caton Taylor at <a href="mailto:caton@crossroadsnorfolk.com">caton@crossroadsnorfolk.com</a>.\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>SAVE THE DATE!</h3>\n\t<p>\n\t\tOur Christmas social this year will be held in the evening of Friday, December 2nd.\n\t\t\n\t</p>\n\t<p>&nbsp;</p>\n\t<h3>MORE QUESTIONS about Women’s Ministry at CrossRoads?</h3>\n\t<p>\n\t\tFeel free to contact Lauren Tremper at <a href="mailto:lauren@crossroadsnorfolk.com">lauren@crossroadsnorfolk.com</a>\n\t</p>\t\n\t\t\n</section>\n';
 
 }
 return __p

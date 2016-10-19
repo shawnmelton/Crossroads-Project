@@ -5,7 +5,7 @@ class ApiRequest {
 
     public function __construct($relativeUrl) {
         $this->fileName = str_replace('/', '-', ltrim($relativeUrl, '/'));
-        $this->relativeUrl = '/content'. $relativeUrl .'?json=1';
+        $this->relativeUrl = '/content'. $relativeUrl .'?json=1&children=1';
     }
 
     private function getProtocol() {
