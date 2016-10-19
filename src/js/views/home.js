@@ -1,43 +1,28 @@
-define([
-	"jquery",
-	"backbone",
-	"tools/cycle.jquery",
-	'templates/html.jst'
-	], function($, Backbone, jCycle, htmlJST){
+define(['jquery', 'backbone', 'tools/homeHoverContent', 'templates/html.jst'],
+	function($, Backbone, homeHoverContent, htmlJST) {
+		var contentCallback = function(r) {
+            if (typeof r === 'object' && r.response !== null && r.response.title !== 'Page Not Found') {
+                
+                document.getElementById('main-content').innerHTML = JST['src/js/templates/home.html']({
+                    content: r.response.content
+                });
+            } else {
+                document.getElementById('main-content').innerHTML = JST['src/js/templates/404.html']();
+            }
+
+            if($(document).width() > 800 && !homeHoverContent.areHandlersSet()) {
+				homeHoverContent.setHandlers();
+			}
+        };
+
 		var homeView = Backbone.View.extend({
-			el: "#main-content",
-
 			render: function(){
-				if(this.$el.html() === null) { // IE fix.
-					this.$el = $("#main-content");
-				}
+                document.getElementById('main-content').innerHTML = JST['src/js/templates/loading.html']();
+                document.title = 'CrossRoads Church in Norfolk, VA';
 
-				var banners = [{
-					url: 'javascript:void(0);',
-					img: '/img/logo.png'
-				},{
-					url: '/fall-festival',
-					img: '/img/fall-festival-banner.png'
-				},{
-					url: '/entrusted',
-					img: '/img/EntrustedBanner.png'
-				},{
-					url: '/learn/sermons',
-					img: '/img/podcast-banner.png'
-				}];
-
-				this.$el.html(JST['src/js/templates/home.html']({
-					banners: banners
-				}));
-				
-				// Apply styles for home page.
-				$("body").attr("class", "home");
-				$("#logo > img").attr("src", "/img/logo.png");
-				
-				// Banners
-				$("#banners").cycle({
-					timeout: 5000
-				});
+				$.getJSON('/api', {
+                    url: '/home-page'
+                }, contentCallback);
 			}
 		});
 		

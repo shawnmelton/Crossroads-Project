@@ -16,12 +16,8 @@ class Page {
 
         foreach($this->children as $index => $child) {
             $childPage = new ChildPage();
+            $childPage->setParentUrl($this->url);
             $childPage->map($child);
-
-            $childPage->excerpt = str_replace('&#8220;'. $this->title .'&#8221;', '&#8220;'. $childPage->title .'&#8221;', $childPage->excerpt);
-            $childPage->excerpt = str_replace($this->url, $childPage->url, $childPage->excerpt);
-            $childPage->excerpt = str_replace('&hellip;', '&hellip;<br><br>', $childPage->excerpt);
-
             $this->children[$index] = $childPage;
         }
     }

@@ -22,11 +22,6 @@
 	#footer-right-clear { display: block; }
 
 	#mapImg > img { width: 75%; }
-
-	#quarter-content { width: 250px; }
-		#quarter-content > a.split { clear: left; }
-		#quarter-content > a.split,
-		#quarter-content > a.split-next { margin-top: 25px; }
 }
 
 
@@ -52,12 +47,6 @@
 }
 
 @media screen and (max-width:500px) {
-	#quarter-content { width: 250px; }
-		#quarter-content > a {
-			clear: left;
-			margin-bottom: 25px;
-		}
-
 	#living-stones { padding-top: 30px;  }
 }
 
@@ -87,11 +76,14 @@
 		#sermon-videos-iframe { display: none; }
 		#sermon-videos-html { display: block; }
 
-		section.alternate > div > img {
+		div.contacts {
+			margin-right: 0;
+		}
+		div.contacts > img {
 			float: none;
 			margin-right: 0;
 		}
-		section.alternate > div > div > strong { margin-bottom: 5px; }
+		div.contacts > div > strong { margin-bottom: 5px; }
 	
 	footer { padding: 10px 0; }
 		footer > p#copyright { text-align: center; margin-top: 15px; }
@@ -110,13 +102,4 @@
 			font-size: 135%;
 			padding: 0 15px;
 		}
-
-	#corner-banner { display: none; }
-
-	#job-posting > span,
-	#job-posting-2 > span {
-		display: block;
-		height: 7px;
-		overflow: hidden;
-	}
 }

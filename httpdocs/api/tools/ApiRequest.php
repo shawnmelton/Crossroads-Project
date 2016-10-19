@@ -15,7 +15,8 @@ class ApiRequest {
     private function generate() {
         $curl = curl_init();
 
-        curl_setopt($curl, CURLOPT_URL, $this->getProtocol() .'://'. $_SERVER['HTTP_HOST'] . $this->relativeUrl);
+        curl_setopt($curl, CURLOPT_URL, 'http://crcnorfolk.com' . $this->relativeUrl);
+        // curl_setopt($curl, CURLOPT_URL, $this->getProtocol() .'://'. $_SERVER['HTTP_HOST'] . $this->relativeUrl);
         curl_setopt($curl, CURLOPT_HEADER, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);

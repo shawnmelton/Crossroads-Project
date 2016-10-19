@@ -1,4 +1,20 @@
-define(['jquery', 'backbone', 'templates/html.jst'], function($, Backbone, htmlJST){
+define(['jquery', 'backbone', 'templates/html.jst'], 
+    function($, Backbone, htmlJST) {
+        var parent = null,
+            contentCallback = function(r) {
+                if (typeof r === 'object' && r.response !== null && r.response.title !== 'Page Not Found') {
+                    document.title = 'CrossRoads Church Norfolk :: '+ r.response.title;
+                    document.getElementById('main-content').innerHTML = JST['src/js/templates/secondary.html']({
+                        content: r.response.content,
+                        title: r.response.title,
+                        children: r.response.children,
+                        parent: parent
+                    });
+                } else {
+                    document.getElementById('main-content').innerHTML = JST['src/js/templates/404.html']();
+                }
+            };
+
         var secondaryView = Backbone.View.extend({
             getParent: function() {
                 var parts = location.pathname.split('/'),
@@ -25,26 +41,7 @@ define(['jquery', 'backbone', 'templates/html.jst'], function($, Backbone, htmlJ
             render: function() {
                 document.getElementById('main-content').innerHTML = JST['src/js/templates/loading.html']();
 
-                var parent = this.getParent(),
-                    contentCallback = function(r) {
-                    if (typeof r === 'object' && r.response !== null && r.response.title !== 'Page Not Found') {
-                        document.title = 'CrossRoads Church Norfolk :: '+ r.response.title;
-                        document.getElementById('main-content').innerHTML = JST['src/js/templates/secondary.html']({
-                            content: r.response.content,
-                            title: r.response.title,
-                            children: r.response.children,
-                            parent: parent
-                        });
-                    } else {
-                        document.getElementById('main-content').innerHTML = JST['src/js/templates/404.html']();
-                    }
-                };
-
-                document.body.className = 'secondary connect';
-                document.getElementById('learn-nav').className = 'first';
-                document.getElementById('find-nav').className = 'third';
-                document.getElementById('connect-nav').className = 'second active';
-                document.getElementById('logo').getElementsByTagName('img')[0].src = '/img/logo-orange-small.png';
+                parent = this.getParent();
 
                 $.getJSON('/api', {
                     url: location.pathname

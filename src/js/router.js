@@ -1,51 +1,10 @@
-define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/contentLocator',
-	'views/home', 'views/find', 'views/connectSecondary', 'views/learnSecondary', 'views/secondary'], 
-	function($, _, Backbone, homeHoverContent, contentLocator, homeView, findView, connSecView, learnSecView, secondaryView){
+define(['jquery', 'underscore', 'backbone', 'views/home', 'views/secondary'], 
+	function($, _, Backbone, homeView, secondaryView){
 		var AppRouter = Backbone.Router.extend({
 			routes: {
 				// Define some URL routes
 				'': 'showHome',
 				'/': 'showHome',
-				'abide': 'showAbide',
-				'learn': 'showLearn',
-				'learn/beliefs': 'showLearn',
-				'learn/identity': 'showLearn',
-				'learn/mission': 'showLearn',
-				'learn/sermons': 'showLearn',
-				'connect': 'showConnect',
-				'connect/life-groups': 'showConnect',
-				'connect/whats-going-on': 'showConnect',
-				'connect/worship': 'showConnect',
-				'connect/upside-down-christmas': 'showUpsideDownChristmas',
-				'find': 'showFind',
-				'find/contact': 'showFind',
-				'moms': 'showMoms',
-				'easter': 'showEaster',
-				'family-on-mission': 'showFamilyOnMission',
-				'daddy-daughter-dance': 'showDance',
-				'i-am-crossroads': 'showIAm',
-				'military-wives': 'showMilitaryWives',
-				'i-still-do': 'showIStillDo',
-				'administrative-pastor': 'showExecPastor',
-				'in-the-news': 'showNews',
-				'cares': 'showCares',
-				'administrative-assistant': 'showAdminAsst',
-				'childrens-director': 'showKidsDirector',
-				'the-camp': 'showCamp',
-				'starting-point': 'showStartingPoint',
-				'justice-sunday': 'showJustice',
-				'imperfect-conference': 'showImperfectConference',
-				'membership-class': 'showMembershipClass',
-				'spring-picnic': 'showSpringPicnic',
-				'mercy-justice': 'showMercyJustice',
-				'swag': 'showSwag',
-				'beach-baptism': 'showBeachBaptism',
-				'summer-schedule': 'showSummerServices',
-				'the-camp-continued': 'showCampContinued',
-				'campus': 'showCampus',
-				'financial-peace': 'showFP',
-				'entrusted': 'showEntrusted',
-				'volunteer-appreciation-night': 'showVolunteerAppreciation',
 				'live': 'showLive',
 				
 				// Default
@@ -56,152 +15,18 @@ define(['jquery', 'underscore', 'backbone', 'tools/homeHoverContent', 'tools/con
 				connSecView.render('live');
 
 				var width = (window.innerWidth * 0.8),
-					height = (width * 0.75);
+					height = (width * 0.6);
 
 				if (width > 1000) {
 					width = 1000;
-					height = 750;
+					height = 600;
 				}
 
 				document.getElementById('live').innerHTML = '<iframe src="//player.vimeo.com/hubnut/album/4186555?color=44bbff&amp;background=000000&amp;slideshow=0&amp;video_title=1&amp;video_byline=0" width="'+ width +'" height="'+ height +'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 			},
-
-			showVolunteerAppreciation: function() {
-				connSecView.render('volunteerAppreciation');
-			},
-
-			showEntrusted: function() {
-				connSecView.render('entrusted');
-			},
-
-			showFP: function() {
-				connSecView.render('financialPeace');
-			},
-
-			showAbide: function() {
-				connSecView.render('abide');
-			},
-
-			showCampus: function() {
-				learnSecView.render('campus');
-			},
-
-			showCampContinued: function() {
-				connSecView.render('campContinued');
-			},
-
-			showBeachBaptism: function() {
-				connSecView.render('beachBaptism');	
-			},
-
-			showSummerServices: function() {
-				learnSecView.render('summerSchedule');
-			},
-
-			showSwag: function() {
-				connSecView.render('swag');
-			},
-
-			showJustice: function() {
-				connSecView.render('justiceSunday');
-			},
-
-			showMembershipClass: function() {
-				learnSecView.render('membershipClass');
-			},
-
-			showMercyJustice: function() {
-				connSecView.render('mercyAndJustice');
-			},
-
-			showImperfectConference: function() {
-				connSecView.render('imperfectConference');
-			},
-
-			showAdminAsst: function() {
-				learnSecView.render('adminAssistant');
-			},
-
-			showExecPastor: function() {
-				learnSecView.render('execPastor');
-			},
-
-			showCares: function() {
-				connSecView.render('cares');
-			},
-
-			showCamp: function() {
-				connSecView.render('theCamp');
-			},
-
-			showStartingPoint: function() {
-				connSecView.render('startingPoint');
-			},
 			
 			showHome: function(){
 				homeView.render();
-
-				if($(document).width() > 800 && !homeHoverContent.areHandlersSet()) {
-					homeHoverContent.setHandlers();
-				}
-			},
-			showDance: function() {
-				connSecView.render('daddydance');
-			},
-
-			showIAm: function() {
-				learnSecView.render('iAmCRC');
-			},
-
-			showIStillDo: function() {
-				connSecView.render('iStillDo');
-			},
-
-			showKidsDirector: function() {
-				learnSecView.render('childrensDirector');
-			},
-			
-			showLearn: function() {
-				learnSecView.render('learn');
-				contentLocator.moveByUrl();
-			},
-			
-			showConnect: function() {
-				connSecView.render('connect');
-				contentLocator.moveByUrl();
-			},
-
-			showEaster: function() {
-				connSecView.render('easter');
-			},
-
-			showFamilyOnMission: function() {
-				connSecView.render('familyOnMission');
-			},
-			
-			showFind: function() {
-				findView.render();
-				contentLocator.moveByUrl();
-			},
-
-			showMoms: function() {
-				connSecView.render('moms');
-			},
-
-			showMilitaryWives: function() {
-				connSecView.render('militaryWives');
-			},
-
-			showNews: function() {
-				learnSecView.render('inTheNews');
-			},
-
-			showUpsideDownChristmas: function() {
-				connSecView.render('upsideDownChristmas');
-			},
-
-			showSpringPicnic: function() {
-				connSecView.render('springPicnic');
 			},
 
 			show404: function() {

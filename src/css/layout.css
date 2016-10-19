@@ -109,6 +109,7 @@ html {}
 				line-height: 1.9;
 				width: 75%;
 			}
+
 			.subcontent {
 				width: 75%;
 				margin: 0 auto;
@@ -124,7 +125,6 @@ html {}
 					float: left;
 					margin: 0 9% 0 0;
 					padding-left: 2px;
-					text-align: justify;
 				}
 				.subcontent > div.orange { margin-right: 0; }
 					.subcontent > div > .bar {
@@ -141,7 +141,7 @@ html {}
 							width: 0;
 							height: 12px;
 						}
-						.subcontent > div a { font-size: 120%; }
+
 						.subcontent > div.blue > .bar { border-left-color: #7ab6ca; }
 						.subcontent > div.blue a { color: #7ab6ca; }
 						.subcontent > div.green > .bar { border-left-color: #729616; }
@@ -157,30 +157,6 @@ html {}
 						margin: 5px 0 10px 5px;
 						line-height: 1.6;
 						font-size: 115%;
-					}
-
-			#quarter-content {
-				width: 750px;
-				margin: 0 auto;
-				padding-bottom: 100px;
-			}
-			#quarter-content:after {
-				content: '';
-				clear: both;
-				display: table;
-			}
-				#quarter-content > a {
-					display: block;
-					margin: 0 25px;
-					width: 200px;
-					float: left;
-					text-align: center;
-					text-decoration: none;
-				}
-					#quarter-content > a > span {
-						text-transform: uppercase;
-						font-size: 15px;
-						font-weight: 100;
 					}
 
 
@@ -215,34 +191,39 @@ html {}
 				margin: 1%;
 				padding: 3% 5%;
 			}
-				body > div > section.alternate,
-                #main-content > div > section.alternate { background: #e4dfdd; }
+				
+            .alternate { background: #e4dfdd; }
+            .alternate-padded {
+                padding: 10px 15px;
+                margin: 25px 0;
+            }
 
 			/* Employee contact information. */
-			section.alternate > div {
+			div.contacts {
 				float: left;
 				margin-right: 75px;
+                margin-left: 25px;
 				margin-bottom: 25px;
 			}
-			section.alternate > div.alternate-right {
+			div.contacts.alternate-right {
 				margin-right: 0;
 			}
-				section.alternate > div > img {
+				div.contacts > img {
 					float: left;
 					margin-right: 25px;
 					border-width: 2px !important;
 				}
-				section.alternate > div > div {
+				div.contacts > div {
 					float: left;
 					min-width: 240px;
 					padding-top: 5px;
 				}
-					section.alternate > div > div > h4 {
+					div.contacts > div > h4 {
 						margin: 0 0 5px;
 						font-weight: normal;
 						font-size: 125%;
 					}
-					section.alternate > div > div > strong {
+					div.contacts > div > strong {
 						display: block;
 						margin-bottom: 8px;
 						font-weight: normal;
@@ -250,10 +231,10 @@ html {}
 						font-size: 90%;
 						color: #666;
 					}
-					section.alternate > div > div > table {
+					div.contacts > div > table {
 						border-collapse: collapse;
 					}
-						section.alternate > div > div > table td { padding: 2px 0; }
+						div.contacts > div > table td { padding: 2px 0; }
 				
 			#logo-mobile {
 				width: 309px;
@@ -270,9 +251,8 @@ html {}
 			background: #fff;
 			height: 100px;
 		}
-		body.learn > header { border-top: 2px solid #7ab6ca; }
-		body.connect > header { border-top: 2px solid #729616; }
-		body.find > header { border-top: 2px solid #e89c17; }
+
+		body > header { border-top: 2px solid #e89c17; }
 			body.secondary #banner {
 				height: 100px;
 				width: 100%;
@@ -301,13 +281,9 @@ html {}
 				}
 					body.secondary > header > nav > a.active,
 					body.secondary > header > nav > a:hover { 
-						border-top-color: #7ab6ca;
+						border-top-color: #e89c17;
 						background: #fcfcfc;
 					}
-					body.secondary > header > nav > a.second.active,
-					body.secondary > header > nav > a.second:hover { border-top-color: #729616; }
-					body.secondary > header > nav > a.third.active,
-					body.secondary > header > nav > a.third:hover { border-top-color: #e89c17; }
 			#logo {
 				position: absolute;
 				top: -8px;
@@ -351,19 +327,6 @@ html {}
 					width: 90%;
 					max-width: 519px;
 				}
-
-			/* Charlie Hall Banner */
-				#charlie-hall > a {
-					cursor: pointer;
-					outline: none;
-				}
-					#charlie-hall img {
-						display: block;
-						width: 100%;
-						border: 0;
-						margin: 0 auto;
-					}
-					#charlie-hall > a:hover > img { box-shadow: 0 0 30px #729616; }
 
 			/* Special Events table */
 			#events-table {
@@ -523,22 +486,6 @@ html {}
 		}
 
 
-	#moms-info-table {
-		border-collapse: collapse;
-		margin: 25px 0 5px;
-	}
-		#moms-info-table td {
-			vertical-align: top;
-			padding: 0 0 5px;
-		}
-	img#moms-header {
-		border-width: 0;
-		width: 100%;
-		max-width: 950px;
-		margin-bottom: 15px;
-	}
-
-
 	body > div a.icon24 {
 		display: block;
 		float: left;
@@ -553,56 +500,14 @@ html {}
 		height: 24px;
 		line-height: 25px;
 	}
-	body > div a.studyGuide { background-image: url(../img/study-guide.png); }
-	body > div a.sermonNotes { background-image: url(../img/cross.png); }
-	body > div a.video { background-image: url(../img/video.png); }
+
 	.clearfix:after {
 		display: table;
 		content: " ";
 		clear: both;		
 	}
 
-
-	.danceLabel {
-		text-align: right;
-		padding-right: 10px;
-		vertical-align: top;
-	}
-
-	.learningCommTable {
-		border-collapse: collapse;
-		margin: 25px 0;
-	}
-		.learningCommTable td {
-			padding: 25px 35px;
-			text-align: center;
-			background: #ddd;
-			border-right: 1px solid #48413e;
-		}
-		.learningCommTable td.noBorder { border-right-width: 0px; }
-			.learningCommTable td strong {
-				font-family: arial;
-			}
-
-
-.jobPosting {
-	width: 75%;
-	font-size: 120%;
-	border-top: 5px solid #e89c17;
-	margin: 25px auto 50px;
-	padding: 25px;
-	text-align: center;
-	background: #eee;
-}
-#job-posting-2 { border-top-color: #729616; }
-#job-posting-3 { border-top-color: #7ab6ca; }
-	.jobPosting > h3 { margin-top: 0; }
-	.jobPosting > a {
-		color: #48413e;
-		font-size: 90%;
-	}
-		.icon,
-		.jobPosting > a > span { font-family: 'fontawesome' }
+	.icon { font-family: 'fontawesome' }
 
 
 	.kidsTable {
