@@ -42,7 +42,7 @@ define(['jquery', 'underscore', 'backbone', 'views/home', 'views/secondary', 'vi
 		});
 		
 		var initialize = function(){
-			var app_router = new AppRouter();
+			window.appRouter = new AppRouter();
 			Backbone.history.start({
 				pushState: true
 			});

@@ -27,6 +27,15 @@ define(['jquery', 'backbone', 'templates/html.jst'],
                     menu.innerHTML = JST['src/js/templates/menu.html']({
                         links: r.response
                     });
+
+                    $(menu).find('a').click(function(e) {
+                        var href = String($(this).attr('href'));
+                        if ((href.indexOf('http') === -1 || href.indexOf('crcnorfolk.com') !== -1) && href.indexOf('.doc') === -1 && href.indexOf('.pdf') === -1) {
+                            e.preventDefault();
+                            href = href.replace('http://crcnorfolk.com', '');
+                            appRouter.navigate(href, {trigger:true, replace:true});
+                        }
+                    });
                 }
             },
             

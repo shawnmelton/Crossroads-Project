@@ -56,7 +56,7 @@ this["JST"]["src/js/templates/loading.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n<div>\n    <section style="min-height: 100px; padding: 100px 0; text-align: center;">\n        <svg width=\'70px\' height=\'70px\' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-reload">\n            <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>\n            <g>\n                <path d="M50 15A35 35 0 1 0 74.787 25.213" fill="none" stroke="#777777" stroke-width="12px"></path>\n                <path d="M50 0L50 30L66 15L50 0" fill="#777777"></path>\n                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1s" repeatCount="indefinite"></animateTransform>\n            </g>\n        </svg>\n    </section>\n</div>';
+__p += '<div>\n    <section style="min-height: 100px; padding: 100px 0; text-align: center;">\n        <svg width=\'70px\' height=\'70px\' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-reload">\n            <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>\n            <g>\n                <path d="M50 15A35 35 0 1 0 74.787 25.213" fill="none" stroke="#777777" stroke-width="12px"></path>\n                <path d="M50 0L50 30L66 15L50 0" fill="#777777"></path>\n                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="1s" repeatCount="indefinite"></animateTransform>\n            </g>\n        </svg>\n    </section>\n</div>';
 
 }
 return __p
