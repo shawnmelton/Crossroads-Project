@@ -41,20 +41,66 @@
 		top: 10px;
 		right: 15px;
 		display: block;
-		border: 1px solid #333;
+		border: 1px solid #555;
 		color: #000;
 		text-decoration: none;
 		cursor: pointer;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 10px;
 	}
+	#menu-btn:hover {
+		color: #e89c17;
+		border-color: #e89c17;
+	}
+		#menu-btn > .hamburger { display: inline; }
+		#menu-btn > .closex { display: none; }
+		#menu-btn.active > .hamburger { display: none; }
+		#menu-btn.active > .closex { display: inline; }
 
-	#menu {
-		background: rgb(0, 0, 0, 0.5);
+	#menu-overlay {
+		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 	}
+	#menu-overlay.active { display: block; }
+
+	#menu-overlay {
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	#menu {
+		display: none;
+		position: absolute;
+		background: #fff;
+		width: 250px;
+		padding: 65px 25px 50px;
+		top: 0;
+		right: 0;
+	}
+	#menu.active { display: block; }
+		#menu div {
+			padding-left: 20px;
+			margin-bottom: 20px;
+		}
+
+		#menu a {
+			display: block;
+			height: 30px;
+			line-height: 30px;
+			text-decoration: none;
+			color: #333;
+			border-bottom: 2px solid #fff;
+			margin-bottom: 5px;
+		}
+		#menu a:hover {
+			border-bottom-color: #e89c17;
+		}
+
+		#menu > div > a { font-weight: bold; }
 }
 
 /* Tablet */
