@@ -35,6 +35,58 @@ class JSON_API_Core_Controller {
       );
     }
   }
+
+  /*!
+   * Build the menu components by traversing the HTML of the menu.
+   */
+  private function _process_menu_node_group($parent) {
+    $links = array();
+
+    $currentChild = $parent->firstChild;
+    while (is_object($currentChild) && $currentChild != NULL) {
+      $subCurrentChild = $currentChild->firstChild;
+      while (is_object($subCurrentChild) && $subCurrentChild != NULL) {
+        switch (strtolower($subCurrentChild->tagName)) {
+          case 'a':
+            $object = new stdClass();
+            $object->name = $subCurrentChild->textContent;
+            $object->url = str_replace('http://crcnorfolk.com/content/', 'http://crcnorfolk.com/', $subCurrentChild->hasAttribute('href') ? $subCurrentChild->getAttributeNode('href')->value : '');
+            $links[] = $object;
+            break;
+
+          case 'ul':
+            $links[] = $this->_process_menu_node_group($subCurrentChild);
+            break;
+        }
+
+        $subCurrentChild = $subCurrentChild->nextSibling;
+      }
+
+      $currentChild = $currentChild->nextSibling;
+    }
+
+    return $links;
+  }
+
+  public function get_primary_menu() {
+    ob_start();
+    echo '<!doctype html><html><body>';
+    wp_nav_menu( array(
+      'theme_location' => 'primary',
+      'menu_class'     => 'primary-menu',
+     ) );
+    echo '</body></html>';
+    $out = ob_get_clean();
+
+    $doc = new DOMDocument();
+    $doc->loadHtml($out);
+    $menu = $doc->getElementById('menu-main-menu');
+    $links = $this->_process_menu_node_group($menu);
+
+    header('Content-Type: application/json');
+    echo json_encode($links);
+    exit;
+  }
   
   public function get_recent_posts() {
     global $json_api;

@@ -14,6 +14,10 @@ class JSON {
         $object->status->success = self::$success;
         $object->status->message = self::$success ? 'OK' : 'Bad Request';
 
+        if (is_string($response) && preg_match('/^\[\{/', $response)) {
+            $response = json_decode($response);
+        }
+
         $object->response = $response;
 
         return json_encode($object);

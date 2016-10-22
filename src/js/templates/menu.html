@@ -1,0 +1,19 @@
+<% _.each(links, function(link) { %>
+<div>
+    <a href="<%= link.url %>" <% if (link.url.indexOf('crcnorfolk') === -1) { %>target="_blank"<% } %>><%= link.name %></a>
+    <% if (link.links.length > 0) { %>
+        <div>
+        <% _.each(link.links, function(childLink) { %>
+            <a href="<%= childLink.url %>" <% if (childLink.url.indexOf('crcnorfolk') === -1) { %>target="_blank"<% } %>><%= childLink.name %></a>
+            <% if (childLink.links.length > 0) { %>
+                <div>
+                <% _.each(childLink.links, function(grandChildLink) { %>
+                    <a href="<%= grandChildLink.url %>" <% if (grandChildLink.url.indexOf('crcnorfolk') === -1) { %>target="_blank"<% } %>><%= grandChildLink.name %></a>
+                <% }) %>
+                </div>
+            <% } %>
+        <% }) %>
+        </div>
+    <% } %>
+</div>
+<% }); %>

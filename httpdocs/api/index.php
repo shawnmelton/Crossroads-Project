@@ -6,6 +6,8 @@ if (isset($_GET['url']) && preg_match('/^(?:[^\/]*(?:\/(?:\/[^\/]*\/?)?)?([^?]+)
     $request = new ApiRequest($_GET['url']);
 } else if (isset($_GET['category']) && preg_match('/^[a-z,\-]+$/i', $_GET['category'])) {
     $request = new ApiRequest('category'. $_GET['category']);
+} else if (isset($_GET['menu'])) {
+    $request = new ApiRequest('menu');
 } else {
     JSON::error();
 }

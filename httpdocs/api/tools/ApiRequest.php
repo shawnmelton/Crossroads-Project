@@ -5,7 +5,12 @@ class ApiRequest {
 
     public function __construct($relativeUrl) {
         $this->fileName = str_replace('/', '-', ltrim($relativeUrl, '/'));
-        $this->relativeUrl = '/content'. $relativeUrl .'?json=1&children=1';
+
+        if ($relativeUrl === 'menu') {
+            $this->relativeUrl = '/content?json=get_primary_menu';
+        } else {
+            $this->relativeUrl = '/content'. $relativeUrl .'?json=1&children=1';
+        }
     }
 
     private function getProtocol() {
@@ -26,12 +31,15 @@ class ApiRequest {
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
         $output = curl_exec($curl);
 
-        if (curl_errno($curl) > 0 || strpos($output, 'DOCTYPE') !== false || strpos($output, 'title') === false) {
+        if ((curl_errno($curl) > 0 || strpos($output, 'DOCTYPE') !== false || strpos($output, 'title') === false) && strpos($this->relativeUrl, 'get_primary_menu') === false) {
             $page = new stdClass();
             $page->title = 'Page Not Found';
             $page->content = '<p>Oops! It looks like the page you are looking for doesn\'t exist.  Please checkout our homepage by clicking this link: <a href="/">http://crcnorfolk.com</a></p>';
             $page->error_message = curl_error($curl);
             $page->error_number = curl_errno($curl);
+        } else if (strpos($this->relativeUrl, 'get_primary_menu') !== false) {
+            $menu = new Menu($output);
+            $page = $menu->getLinks();
         } else {
             $output = json_decode($output);
             $page = new Page();

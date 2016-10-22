@@ -46,7 +46,7 @@ this["JST"]["src/js/templates/live.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n<section id="live">\n    \n</section>';
+__p += '<section id="live">\n    \n</section>';
 
 }
 return __p
@@ -62,12 +62,67 @@ __p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="
 return __p
 };
 
+this["JST"]["src/js/templates/menu.html"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
+function print() { __p += __j.call(arguments, '') }
+with (obj) {
+
+ _.each(links, function(link) { ;
+__p += '\n<div>\n    <a href="' +
+((__t = ( link.url )) == null ? '' : __t) +
+'" ';
+ if (link.url.indexOf('crcnorfolk') === -1) { ;
+__p += 'target="_blank"';
+ } ;
+__p += '>' +
+((__t = ( link.name )) == null ? '' : __t) +
+'</a>\n    ';
+ if (link.links.length > 0) { ;
+__p += '\n        <div>\n        ';
+ _.each(link.links, function(childLink) { ;
+__p += '\n            <a href="' +
+((__t = ( childLink.url )) == null ? '' : __t) +
+'" ';
+ if (childLink.url.indexOf('crcnorfolk') === -1) { ;
+__p += 'target="_blank"';
+ } ;
+__p += '>' +
+((__t = ( childLink.name )) == null ? '' : __t) +
+'</a>\n            ';
+ if (childLink.links.length > 0) { ;
+__p += '\n                <div>\n                ';
+ _.each(childLink.links, function(grandChildLink) { ;
+__p += '\n                    <a href="' +
+((__t = ( grandChildLink.url )) == null ? '' : __t) +
+'" ';
+ if (grandChildLink.url.indexOf('crcnorfolk') === -1) { ;
+__p += 'target="_blank"';
+ } ;
+__p += '>' +
+((__t = ( grandChildLink.name )) == null ? '' : __t) +
+'</a>\n                ';
+ }) ;
+__p += '\n                </div>\n            ';
+ } ;
+__p += '\n        ';
+ }) ;
+__p += '\n        </div>\n    ';
+ } ;
+__p += '\n</div>\n';
+ }); ;
+
+
+}
+return __p
+};
+
 this["JST"]["src/js/templates/secondary.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<a href="/" id="logo-mobile"><img src="/img/logo-orange-small.png" alt="CrossRoads Church Norfolk"></a>\n<div style="padding-bottom: 50px;">\n    <section ';
+__p += '<div style="padding-bottom: 50px;">\n    <section ';
  if (content === '') { ;
 __p += 'style="padding-bottom: 0; margin-bottom: 0;"';
  } ;

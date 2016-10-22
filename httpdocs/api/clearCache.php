@@ -7,3 +7,6 @@ foreach ($files as $file){
         unlink($file);
     }
 }
+
+header('Location: http://crcnorfolk.com/content/wp-admin');
+exit;
