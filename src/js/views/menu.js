@@ -9,17 +9,7 @@ define(['jquery', 'backbone', 'templates/html.jst'],
             clickCallback = function(e) {
                 e.preventDefault();
 
-                showMenu = !showMenu;
-
-                if (showMenu) {
-                    menu.classList.add('active');
-                    menuBtn.classList.add('active');
-                    menuOverlay.classList.add('active');
-                } else {
-                    menu.classList.remove('active');
-                    menuBtn.classList.remove('active');
-                    menuOverlay.classList.remove('active');
-                }
+                toggleMenu();
             },
 
             menuCallback = function(r) {
@@ -34,8 +24,26 @@ define(['jquery', 'backbone', 'templates/html.jst'],
                             e.preventDefault();
                             href = href.replace('http://crcnorfolk.com', '');
                             appRouter.navigate(href, {trigger:true, replace:true});
+
+                            if (showMenu) {
+                                toggleMenu();
+                            }
                         }
                     });
+                }
+            },
+
+            toggleMenu = function() {
+                showMenu = !showMenu;
+
+                if (showMenu) {
+                    menu.classList.add('active');
+                    menuBtn.classList.add('active');
+                    menuOverlay.classList.add('active');
+                } else {
+                    menu.classList.remove('active');
+                    menuBtn.classList.remove('active');
+                    menuOverlay.classList.remove('active');
                 }
             },
             

@@ -132,7 +132,10 @@ html {}
 				padding: 3% 5%;
 			}
 				
-            .alternate { background: #e4dfdd; }
+            .alternate {
+                background: #e4dfdd;
+                padding: 10px 15px;
+            }
             .alternate-padded {
                 padding: 10px 15px;
                 margin: 25px 0;
@@ -258,8 +261,9 @@ html {}
 				cursor: pointer;
 			}
 			footer > a#crc > img {
-				margin-bottom: 10px;
+				margin: 0 0 0 10px;
 				border: 0;
+                width: 200px;
 			}
 			footer a {
 				color: #ccc;
@@ -275,7 +279,8 @@ html {}
 			#copyright {
 				color: #888;
 				font-size: 80%;	
-				margin-top: 45px;
+				margin-top: 25px;
+                text-align: center;
 			}
 			footer ol {
 				clear: right;
