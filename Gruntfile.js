@@ -35,18 +35,8 @@ module.exports = function(grunt) {
 		},
 		concat: {
 			build: {
-				src: ['httpdocs/js/require.min.js', 'httpdocs/js/crc.min.js'],
+				src: ['src/js/libs/require.js', 'httpdocs/js/crc.min.js'],
 				dest: 'httpdocs/js/crc.min.js'
-			}
-		},
-		uglify: {
-			options: {
-				report: 'min'
-			},
-			my_target: {
-				files: {
-					'httpdocs/js/require.min.js': ['src/js/libs/require.js']
-				}
 			}
 		},
 		cssmin: {
@@ -79,43 +69,6 @@ module.exports = function(grunt) {
 					'httpdocs/index.html' : 'src/index.html'
 				}
 			}
-		},
-		watch: {
-			css: {
-				files: ['src/css/layout.css', 'src/css/responsive.css'],
-				tasks: ['cssmin'],
-				options: {
-					livereload: true
-				}
-			},
-			scripts: {
-				files: ['src/js/*.js', 'src/js/**/*.js'],
-				tasks: ['jshint', 'requirejs'],
-				options: {
-					livereload: true
-				}
-			},
-			images: {
-				files: ['src/img/*.png', 'src/img/*.jpg'],
-				tasks: ['imagemin'],
-				options: {
-					livereload: true
-				}
-			},
-			html: {
-				files: ['src/index.html'],
-				tasks: ['htmlmin'],
-				options: {
-					livereload: true
-				}
-			},
-			templates: {
-				files: ['src/js/templates/*.html'],
-				tasks: ['jst', 'requirejs'],
-				options: {
-					livereload: true
-				}
-			}
 		}
 	});
 
@@ -127,10 +80,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+	//grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
 	grunt.loadNpmTasks("grunt-contrib-htmlmin");
-	grunt.loadNpmTasks("grunt-contrib-watch");
-	grunt.registerTask('default', ['jst', 'jshint', 'requirejs', 'uglify', 'cssmin', 'concat', 'htmlmin']);
+	//grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.registerTask('default', ['jst', 'jshint', 'requirejs', 'cssmin', 'concat', 'htmlmin']);
 };

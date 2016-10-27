@@ -1,5 +1,5 @@
-define(['jquery', 'backbone', 'templates/html.jst'], 
-    function($, Backbone, htmlJST) {
+define(['jquery', 'backbone', 'tools/events', 'templates/html.jst'], 
+    function($, Backbone, Events, htmlJST) {
         var parent = null,
             contentCallback = function(r) {
                 window.scrollTo(0, 0);
@@ -12,21 +12,10 @@ define(['jquery', 'backbone', 'templates/html.jst'],
                         parent: parent
                     });
 
-                    setLinkEvents();
+                    Events.setGlobal();
                 } else {
                     document.getElementById('main-content').innerHTML = JST['src/js/templates/404.html']();
                 }
-            },
-
-            setLinkEvents = function() {
-                $(document.getElementById('main-content')).find('a').click(function(e) {
-                    var href = String($(this).attr('href'));
-                    if ((href.indexOf('http') === -1 || href.indexOf('crcnorfolk.com') !== -1) && href.indexOf('.doc') === -1 && href.indexOf('.pdf') === -1) {
-                        e.preventDefault();
-                        href = href.replace('http://crcnorfolk.com', '');
-                        appRouter.navigate(href, {trigger:true, replace:true});
-                    }
-                });
             };
 
         var secondaryView = Backbone.View.extend({

@@ -189,19 +189,6 @@ html {}
 			}
 				#mapImg:hover > img { border-color: #e89c17; }
 
-
-			#sermon-videos-html { display: none; }
-			#mobile-video,
-			#sermon-videos-html {
-				outline: none;
-			}
-				#mobile-video > img,
-				#sermon-videos-html > img {
-					border: 0;
-					width: 90%;
-					max-width: 519px;
-				}
-
 			/* Special Events table */
 			#events-table {
 				width: 100%;

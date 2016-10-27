@@ -3,6 +3,10 @@ RewriteBase /
 
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^wp-content/uploads/(.*)$ http://crcnorfolk.com/content/wp-content/uploads/$1 [R=301,NC,L]
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule .* index.html [L]
 
 # Adding default character set.
