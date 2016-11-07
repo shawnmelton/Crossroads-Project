@@ -8,6 +8,8 @@ class ApiRequest {
 
         if ($relativeUrl === 'menu') {
             $this->relativeUrl = '/content?json=get_primary_menu';
+        } else if (preg_match('/^\d+$/', $relativeUrl)) {
+            $this->relativeUrl = '/content/api/get_post/?post_id='. $relativeUrl;
         } else {
             $this->relativeUrl = '/content'. $relativeUrl .'?json=1&children=1';
         }
@@ -43,7 +45,11 @@ class ApiRequest {
         } else {
             $output = json_decode($output);
             $page = new Page();
-            $page->map($output->page);
+            if (isset($output->page)) {
+                $page->map($output->page);
+            } else {
+                $page->map($output->post);
+            }
         }
 
         return $page;

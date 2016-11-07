@@ -142,6 +142,8 @@
 /* Phone */
 @media screen and (max-width:481px) {
 	body { font-size: 11px; }
+
+        header > div.serviceTimes { font-size: 8px; }
 	
 		#follow { display: none; }
 		

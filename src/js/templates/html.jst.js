@@ -46,9 +46,9 @@ this["JST"]["src/js/templates/live.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<section>\n    <img src="http://crcnorfolk.com/content/wp-content/uploads/2016/10/online-sermons.jpg" class="flex">\n    <p>&nbsp;</p>\n    <h2>Watch</h2>\n    ' +
-((__t = ( watch )) == null ? '' : __t) +
-'\n    <p>&nbsp;</p>\n    <p>\n        To listen to our sermons through iTunes podcasts, <a href="https://itunes.apple.com/us/podcast/crossroads-church/id374524089?mt=2" target="_blank">click here</a>.\n    </p>\n    <p>&nbsp;</p>\n    <hr>\n    <h2>Listen</h2>\n    ' +
+__p += '<section>\n    <img src="http://crcnorfolk.com/content/wp-content/uploads/2016/10/online-sermons.jpg" class="flex">\n    <p>&nbsp;</p>\n    <h2>Watch</h2>\n    <div id="player" style="height: ' +
+((__t = ( playerHeight )) == null ? '' : __t) +
+';"></div>\n    <p>&nbsp;</p>\n    <hr>\n    <h2>Listen</h2>\n    <p>\n        To listen to our sermons through iTunes podcasts, <a href="https://itunes.apple.com/us/podcast/crossroads-church/id374524089?mt=2" target="_blank">click here</a>.\n    </p>\n    <p>&nbsp;</p>\n    ' +
 ((__t = ( listen )) == null ? '' : __t) +
 '\n</section>';
 

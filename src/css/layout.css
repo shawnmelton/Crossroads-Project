@@ -24,6 +24,12 @@ html {}
             border-top: 3px solid #e89c17;
             background: #fff;
         }
+            header > div {
+                position: absolute;
+                left: 10px;
+                top: 5px;
+            }
+
             #logo {
                 display: block;
                 margin: 5px auto;
