@@ -48,7 +48,7 @@ var __t, __p = '', __e = _.escape;
 with (obj) {
 __p += '<section>\n    <img src="http://crcnorfolk.com/content/wp-content/uploads/2016/10/online-sermons.jpg" class="flex">\n    <p>&nbsp;</p>\n    <h2>Watch</h2>\n    <div id="player" style="height: ' +
 ((__t = ( playerHeight )) == null ? '' : __t) +
-';"></div>\n    <p>&nbsp;</p>\n    <hr>\n    <h2>Listen</h2>\n    <p>\n        To listen to our sermons through iTunes podcasts, <a href="https://itunes.apple.com/us/podcast/crossroads-church/id374524089?mt=2" target="_blank">click here</a>.\n    </p>\n    <p>&nbsp;</p>\n    ' +
+';"></div>\n    <p>&nbsp;</p>\n    <p>Use the following link to view past sermons on Vimeo: <a href="https://vimeo.com/album/4186555" target="_blank">https://vimeo.com/album/4186555</a></p>\n    <p>&nbsp;</p>\n    <hr>\n    <h2>Listen</h2>\n    <p>\n        To listen to our sermons through iTunes podcasts, <a href="https://itunes.apple.com/us/podcast/crossroads-church/id374524089?mt=2" target="_blank">click here</a>.\n    </p>\n    <p>&nbsp;</p>\n    ' +
 ((__t = ( listen )) == null ? '' : __t) +
 '\n</section>';
 

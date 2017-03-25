@@ -39,7 +39,7 @@ define(['jquery', 'underscore', 'backbone', 'views/home', 'views/secondary', 'vi
 				// <iframe src="//player.vimeo.com/hubnut/album/4186555?color=44bbff&amp;background=000000&amp;slideshow=0&amp;video_title=1&amp;video_byline=0" width="'+ width +'" height="'+ height +'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 				document.getElementById('main-content').innerHTML = JST['src/js/templates/live.html']({
-					playerHeight: Math.floor(height * 1.25) +'px',
+					playerHeight: Math.floor(height) +'px',
 					listen: '<iframe src="https://crcnorfolk.sermon.net/embed" scrolling="no" frameborder="0" style="width: '+ width +'px; min-height: 2000px; overflow: hidden;" allowTransparency="true" allowfullscreen></iframe>'
 				});
 
